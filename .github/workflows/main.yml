@@ -27,7 +27,8 @@ jobs:
         git config --local user.name "GitHub Action"
         git add -A
         git commit -m "Update Calendar"
-        git push
+        git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/thesanogoeffect/forejt.git
+        git push --set-upstream origin main
 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
