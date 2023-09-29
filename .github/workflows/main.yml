@@ -22,8 +22,8 @@ jobs:
 
       - name: Commit and push to main
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
           git add -A
           git diff --quiet && git diff --staged --quiet || git commit -m "Update Calendar"
           git push origin main
@@ -47,8 +47,8 @@ jobs:
       - name: Commit and push to gh-pages
         run: |
           cd ../gh-pages  # make sure you're in the right directory
-          git config user.email "action@github.com"
-          git config user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
           git add forejt.ics  
           git commit -m "Update Calendar ICS file"
           git push origin gh-pages
