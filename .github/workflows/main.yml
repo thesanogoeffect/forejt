@@ -7,11 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout
-    - name: Set up Python
-      uses: actions/setup-python
-      with:
-        python-version: '3.x'
+      uses: actions/checkout@v4
+    - name: Setup Python
+      uses: actions/setup-python@v4.7.0
     - name: Install dependencies
       run: |
         pip install =r requirements.txt
