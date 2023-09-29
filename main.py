@@ -67,8 +67,7 @@ if __name__ == "__main__":
     cal = Calendar()
     cal['X-WR-CALNAME'] = "FC Forejt"
     cal['VERSION'] = '2.0'
-    # created by Jakub Werner
-    cal['PRODID'] = '-//FC Forejt //FC Forejt Zápasy//CZ'
+    cal['PRODID'] = '-//Forejt//FC Forejt//EN'
 
     try:
         cal = create_past_events(cal, results_df)
