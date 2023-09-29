@@ -1,4 +1,4 @@
-name: Update Calendar
+name: Update Calendar Job
 on:
   schedule:
     - cron:  '0 */12 * * *'  # Run twice a day
