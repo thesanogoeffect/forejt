@@ -38,7 +38,11 @@ jobs:
           git checkout gh-pages
 
       - name: Move ICS file to gh-pages
-        run: cp -f ../forejt/forejt.ics ./
+        run: |
+          if [ ! -f "./forejt.ics" ] || ! cmp -s "../forejt/forejt.ics" "./forejt.ics"; then
+            cp -f ../forejt/forejt.ics ./
+          fi
+  
 
       - name: Commit and push to gh-pages
         run: |
