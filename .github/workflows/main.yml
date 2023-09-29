@@ -47,10 +47,11 @@ jobs:
       - name: Commit and push to gh-pages
         run: |
           cd ../gh-pages  # make sure you're in the right directory
-          git config user.email "action@github.com"
-          git config user.name "GitHub Action"
-          git add forejt.ics  
-          git -c user.name='GitHub Action' -c user.email='action@github.com' commit -m "Update Calendar ICS file"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add forejt.ics
+          git commit -m "Update Calendar ICS file" || true  # Will not fail if there's nothing to commit
           git push origin gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
