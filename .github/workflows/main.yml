@@ -34,11 +34,11 @@ jobs:
         run: |
           mkdir ../gh-pages
           cd ../gh-pages
-          git clone https://github.com/[your_username]/[your_repo].git .
+          git clone https://github.com/thesanogoeffect/forejt.git .
           git checkout gh-pages
 
       - name: Move ICS file to gh-pages
-        run: cp -f ../[your_repo_directory]/forejt.ics ./
+        run: cp -f ../forejt/forejt.ics ./
 
       - name: Commit and push to gh-pages
         run: |
