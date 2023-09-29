@@ -29,6 +29,9 @@ jobs:
         git commit -m "Update Calendar"
         git push
 
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Checkout gh-pages branch
       run: |
         git fetch
