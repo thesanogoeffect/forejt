@@ -30,7 +30,7 @@ export default {
     openLink(variant) {
       const url = `https://thesanogoeffect.github.io/forejt/forejt.ics`;
       const webcal_url = `webcal://thesanogoeffect.github.io/forejt/forejt.ics`;
-      const google_cal_url = `https://www.google.com/calendar/render?cid=https://thesanogoeffect.github.io/forejt/forejt.ics`;
+      const google_cal_url = `https://www.google.com/calendar/render?cid=${webcal_url}`;
       
       if (variant === "apple") {
         window.open(webcal_url);
