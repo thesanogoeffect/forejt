@@ -1,46 +1,50 @@
 name: Update Calendar Job
 on:
   schedule:
-    - cron:  '*/10 * * * *'  # Run twice a day
+    - cron: "*/10 * * * *" # Run twice a day
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-      with:
-        ref: 'main'  # Specify the branch to checkout
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: "main" # Specify the branch to checkout
 
-    - name: Setup Python
-      uses: actions/setup-python@v4.7.0
+      - name: Setup Python
+        uses: actions/setup-python@v4.7.0
 
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
 
-    - name: Run script
-      run: python main.py
+      - name: Run script
+        run: python main.py
 
-    - name: Commit and push to main
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add -A
-        git diff --quiet && git diff --staged --quiet || git commit -m "Update Calendar"
-        git push origin main
-    
-    - name: Checkout gh-pages branch
-      run: |
-        git fetch
-        git checkout gh-pages
-        git pull origin gh-pages
+      - name: Commit and push to main
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update Calendar"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Move ICS file to gh-pages
-      run: |
-        cp forejt.ics ./  # adjust the path as needed
+      - name: Checkout gh-pages branch
+        run: |
+          git fetch
+          git checkout gh-pages
+          git pull origin gh-pages
 
-    - name: Commit and push to gh-pages
-      run: |
-        git add -A
-        git commit -m "Update Calendar ICS file"
-        git push origin gh-pages
+      - name: Move ICS file to gh-pages
+        run: |
+          cp forejt.ics ./  # adjust the path as needed
+
+      - name: Commit and push to gh-pages
+        run: |
+          git add -A
+          git commit -m "Update Calendar ICS file"
+          git push origin gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
