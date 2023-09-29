@@ -46,9 +46,10 @@ jobs:
 
       - name: Commit and push to gh-pages
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add forejt.ics
+          cd ../gh-pages  # make sure you're in the right directory
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add forejt.ics  
           git commit -m "Update Calendar ICS file"
           git push origin gh-pages
         env:
