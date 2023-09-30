@@ -1,4 +1,4 @@
-<template>
+  <template>
   <v-container class="text-center py-2">
     <v-row align="center" justify="center">
       <v-col cols="auto">
@@ -69,6 +69,10 @@
         </v-card>
       </v-col>
     </v-row>
+  </v-container>
+  <v-container class="text-center">
+    <i>Kalendář se sám aktualizuje každých 24 hodin.</i> <br />
+
   </v-container>
 </template>
 
