@@ -67,7 +67,7 @@
                     <v-icon medium>mdi-calendar</v-icon>
                   </v-btn>
                 </a>
-                <div>Ics</div>
+                <div>.ics</div>
               </v-col>
             </v-row>
           </v-card-text>
