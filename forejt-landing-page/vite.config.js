@@ -29,6 +29,7 @@ export default defineConfig({
       },
     }),
   ],
+  base: process.env.NODE_ENV === 'production' ? '/forejt/' : '/',
   define: { 'process.env': {} },
   resolve: {
     alias: {
