@@ -14,7 +14,15 @@
   <v-container fluid>
     <v-row align="center" justify="center">
       <v-col cols="12" md="6" lg="4">
-        <v-card class="mx-auto mb-5">
+        <v-card class="mx-auto mb-5" outlined>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+
+
           <v-row class="justify-center">
             <v-col cols="auto" class="text-center">
               <a :href="googleLink">
