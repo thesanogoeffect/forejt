@@ -55,6 +55,7 @@ def results_df(all_dfs, pitches_df):
     results_df = results_df.set_index("Domácí - Hosté")
     return results_df
 
+@pytest.fixture(scope="module")
 def scoreboard_df(all_dfs):
     scoreboard_df = all_dfs[2]
     scoreboard_df.set_index("Tým", inplace=True)
