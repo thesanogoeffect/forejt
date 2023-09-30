@@ -60,8 +60,6 @@ def scoreboard_df(all_dfs):
     scoreboard_df.set_index("Tým", inplace=True)
     return scoreboard_df
 
-
-
 def test_pitches_df(pitches_df):
     assert len(pitches_df) > 0
     assert all(x in pitches_df.columns for x in ['Název hřiště', 'Zkratka hřiště', 'Adresa areálů (hřišť) a další informace', 'Zkratka hřiště base', 'Pure adresa', 'Desc'])
