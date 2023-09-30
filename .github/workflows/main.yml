@@ -1,32 +1,34 @@
 name: Update Calendar Job
 on:
   schedule:
-    - cron: "*/7 * * * *" # Run twice a day
+    - cron: "*/7 * * * *" # Run every 7 minutes for testing
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout main code
         uses: actions/checkout@v4
         with:
-          ref: "main" # Specify the branch to checkout
-          path: "./forejt" # This clones the repo into a subfolder named forejt
+          ref: "main"
+          path: "./forejt"
 
       - name: Setup Python
         uses: actions/setup-python@v4.7.0
 
       - name: Install dependencies
         run: pip install -r ./forejt/requirements.txt
+        working-directory: ./
 
       - name: Run script
         run: python ./forejt/main.py
 
       - name: Commit and push to main
         run: |
+          cd ./forejt
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
           git add -A
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update Calendar"
+          git commit -m "Update Calendar" || true  # Will not fail if there's nothing to commit
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -35,22 +37,19 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: 'gh-pages'
-          path: './gh-pages'  # This clones the repo into a subfolder named gh-pages
-        
+          path: './gh-pages'
+
       - name: Move ICS file to gh-pages
         run: |
-          if [ ! -f "./gh-pages/forejt.ics" ] || ! cmp -s "./forejt/forejt.ics" "./gh-pages/forejt.ics"; then
-            cp -f ./forejt/forejt.ics ./gh-pages/
-          fi
-        
+          cp ./forejt/forejt.ics ./gh-pages/
+
       - name: Commit and push to gh-pages
         run: |
-          cd ../gh-pages  # make sure you're in the right directory
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          cd ./gh-pages
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
           git add forejt.ics
           git commit -m "Update Calendar ICS file" || true  # Will not fail if there's nothing to commit
           git push origin gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
