@@ -3,6 +3,14 @@ import pytest
 
 '''Currently tests only the scraping part'''
 
+
+def get_team_position_points(scoreboard_df, team_name):
+    # return a tuple containing the team position and points
+    # for example: (1, 12)
+    team_row = scoreboard_df.loc[team_name]
+    return (int(team_row["Pořadí"]), int(team_row["Počet bodů"]))
+
+
 @pytest.fixture(scope="module")
 def all_dfs():
     try:
@@ -47,6 +55,11 @@ def results_df(all_dfs, pitches_df):
     results_df = results_df.set_index("Domácí - Hosté")
     return results_df
 
+def scoreboard_df(all_dfs):
+    scoreboard_df = all_dfs[2]
+    scoreboard_df.set_index("Tým", inplace=True)
+    return scoreboard_df
+
 
 
 def test_pitches_df(pitches_df):
@@ -62,3 +75,8 @@ def test_matches_df(matches_df):
 def test_results_df(results_df):
     assert results_df.shape[1] == 8
     assert all(x in results_df.columns for x in ['Datum', 'Čas', 'Hřiště', 'Kolo', 'Výsledek', 'Název hřiště', 'Pure adresa', 'Desc'])
+
+def test_scoreboard_df(scoreboard_df):
+    # Tým	Odehrané zápasy	Počet výher	Počet remíz	Počet proher	Skóre	Počet bodů
+    assert scoreboard_df.shape[1] == 7
+    assert all(x in scoreboard_df.columns for x in ['Pořadí', 'Odehrané zápasy', 'Počet výher', 'Počet remíz', 'Počet proher', 'Skóre', 'Počet bodů'])

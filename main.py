@@ -19,16 +19,29 @@ def create_past_events(cal, results_df):
         cal.add_component(event)
     return cal
 
-def create_future_events(cal, matches_df):
+def create_future_events(cal, matches_df, scoreboard_df):
     for match in matches_df.itertuples(index=True, name='Match'):
         event = Event()
-        event.add('summary', f"{match.Index}, {match._5}")
+        team_1 = match.Index.split(" vs. ")[0].strip()
+        team_2 = match.Index.split(" vs. ")[1].strip()
+        team_1_pos, team_1_points = get_team_position_points(scoreboard_df, team_1)
+        team_2_pos, team_2_points = get_team_position_points(scoreboard_df, team_2)
+        event.add('summary', f"{team_1} ({team_1_pos}.) vs. {team_2} ({team_2_pos}.), {match._5}")
         event.add('location', match._6)
-        event.add('description', f"{str(match.Kolo)}.kolo, hřiště: {match.Hřiště}\n{match.Desc.lstrip()}")
+        event.add('description', f"{str(match.Kolo)}.kolo, hřiště: {match.Hřiště}\n{team_1}: ({team_1_pos}.,{team_1_points}b), {team_2}: ({team_2_pos}.,{team_2_points}b)\n{match.Desc.lstrip()}")
         event.add('dtstart', pd.to_datetime(match.Datum + " " + match.Čas, dayfirst=True).tz_localize("Europe/Prague"))
         event.add('dtend', (pd.to_datetime(match.Datum + " " + match.Čas, dayfirst=True) + pd.Timedelta(minutes=75)).tz_localize("Europe/Prague"))
         cal.add_component(event)
     return cal
+
+
+def get_team_position_points(scoreboard_df, team_name):
+    # return a tuple containing the team position and points
+    # for example: (1, 12)
+    team_row = scoreboard_df.loc[team_name]
+    return (int(team_row["Pořadí"]), int(team_row["Počet bodů"]))
+
+
 
 if __name__ == "__main__":
     try:
@@ -77,6 +90,9 @@ if __name__ == "__main__":
     logging.info(f"results_df head: {results_df.head()}")
     logging.info(f"results_df shape: {results_df.shape}")
 
+    scoreboard_df = matches_dfs[2]
+    scoreboard_df.set_index("Tým", inplace=True)
+
 
     cal = Calendar()
     cal['X-WR-CALNAME'] = "FC Forejt"
@@ -89,7 +105,7 @@ if __name__ == "__main__":
         logging.warning(f"An error occurred while creating past events: {e}")
 
     try:
-        cal = create_future_events(cal, matches_df)
+        cal = create_future_events(cal, matches_df, scoreboard_df)
     except Exception as e:
         logging.warning(f"An error occurred while creating future events: {e}")
     
