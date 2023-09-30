@@ -51,7 +51,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add forejt.ics
           git commit -m "Update Calendar ICS file" || true  # Will not fail if there's nothing to commit
-          git push origin gh-pages
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/thesanogoeffect/forejt.git gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
