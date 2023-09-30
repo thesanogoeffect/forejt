@@ -10,6 +10,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: "main" # Specify the branch to checkout
+          path: "./forejt" # This clones the repo into a subfolder named forejt
 
       - name: Setup Python
         uses: actions/setup-python@v4.7.0
@@ -31,19 +32,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout gh-pages branch
-        run: |
-          mkdir ../gh-pages
-          cd ../gh-pages
-          git clone https://github.com/thesanogoeffect/forejt.git .
-          git checkout gh-pages
-
+        uses: actions/checkout@v4
+        with:
+          ref: 'gh-pages'
+          path: './gh-pages'  # This clones the repo into a subfolder named gh-pages
+        
       - name: Move ICS file to gh-pages
         run: |
-          if [ ! -f "./forejt.ics" ] || ! cmp -s "../forejt/forejt.ics" "./forejt.ics"; then
-            cp -f ../forejt/forejt.ics ./
+          if [ ! -f "./gh-pages/forejt.ics" ] || ! cmp -s "./forejt/forejt.ics" "./gh-pages/forejt.ics"; then
+            cp -f ./forejt/forejt.ics ./gh-pages/
           fi
-  
-
+        
       - name: Commit and push to gh-pages
         run: |
           cd ../gh-pages  # make sure you're in the right directory
