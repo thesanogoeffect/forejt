@@ -1,7 +1,7 @@
 name: Update Calendar Job
 on:
   schedule:
-    - cron: "* */12 * * *" # Run twice a day
+    - cron: "*/7 * * * *" # Run twice a day
 jobs:
   build:
     runs-on: ubuntu-latest
