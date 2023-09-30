@@ -2,3 +2,4 @@ pandas
 icalendar
 pytz
 lxml
+pytest

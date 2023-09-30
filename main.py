@@ -32,6 +32,7 @@ def create_future_events(cal, matches_df):
 
 if __name__ == "__main__":
     try:
+        logging.info("Fetching pitches...")
         pitches_df = pd.read_html("https://www.psmf.cz/hriste/")[0]
     except Exception as e:
         logging.error(f"An error occurred while reading pitches, is PSMF down?: {e}")
@@ -40,9 +41,16 @@ if __name__ == "__main__":
     pitches_df["Pure adresa"] = pitches_df["Adresa areálů (hřišť) a další informace"].str.extract('(.+Praha \d+)', expand=True)
     pitches_df["Desc"] = pitches_df["Adresa areálů (hřišť) a další informace"].str.replace('(.+Praha \d+)', "", regex=True)
 
+    logging.info("Successfully read pitches")
+    logging.info(f"Found {len(pitches_df)} pitches")
+    logging.info(f"pitches_df columns: {pitches_df.columns}")
+    logging.info(f"pitches_df head: {pitches_df.head()}")
+    logging.info(f"pitches_df shape: {pitches_df.shape}")
+    logging.info("Fetching matches and results...")
+
     matches_dfs = pd.read_html("https://www.psmf.cz/souteze/2023-hanspaulska-liga-podzim/7-d/tymy/forejt-fc/")
 
-
+    logging.info("Successfully read matches and results")
     matches_df = matches_dfs[3]
     matches_df["Domácí - Hosté"] = matches_df["Domácí - Hosté"].str.replace("  ", " vs. ")
     matches_df["Zkratka hřiště base"] = matches_df["Hřiště"].str.extract('(^[A-Z]+)', expand=True)
@@ -51,8 +59,10 @@ if __name__ == "__main__":
     matches_df["Datum"] = matches_df["Datum"].str.replace("[A-Za-zÚČá]+", "", regex=True).str.replace('\xa0', '')
     matches_df["Kolo"] = matches_df["Kolo"].astype(int)
     matches_df = matches_df.set_index("Domácí - Hosté")
-    print(matches_df.head())
-
+    logging.info(f"Found {len(matches_df)} matches")
+    logging.info(f"matches_df columns: {matches_df.columns}")
+    logging.info(f"matches_df head: {matches_df.head()}")
+    logging.info(f"matches_df shape: {matches_df.shape}")
 
     results_df = matches_dfs[0]
     results_df["Domácí - Hosté"] = results_df["Domácí - Hosté"].str.replace("  ", " vs. ")
@@ -62,7 +72,11 @@ if __name__ == "__main__":
     results_df["Datum"] = results_df["Datum"].str.replace("[A-Za-zÚČá]+", "", regex=True).str.replace('\xa0', '')
     results_df["Kolo"] = results_df["Kolo"].astype(int)
     results_df = results_df.set_index("Domácí - Hosté")
-    print(results_df.head())
+    logging.info(f"Found {len(results_df)} results")
+    logging.info(f"results_df columns: {results_df.columns}")
+    logging.info(f"results_df head: {results_df.head()}")
+    logging.info(f"results_df shape: {results_df.shape}")
+
 
     cal = Calendar()
     cal['X-WR-CALNAME'] = "FC Forejt"
@@ -72,13 +86,17 @@ if __name__ == "__main__":
     try:
         cal = create_past_events(cal, results_df)
     except Exception as e:
-        logging.error(f"An error occurred while creating past events: {e}")
+        logging.warning(f"An error occurred while creating past events: {e}")
 
     try:
         cal = create_future_events(cal, matches_df)
     except Exception as e:
-        logging.error(f"An error occurred while creating future events: {e}")
+        logging.warning(f"An error occurred while creating future events: {e}")
     
+    # if cal is empty, throw an error
+    if len(cal.subcomponents) == 0:
+        logging.error("No events were created, exiting...")
+        exit(1)
     try:
         with open('forejt.ics', 'wb') as f:
             f.write(cal.to_ical())

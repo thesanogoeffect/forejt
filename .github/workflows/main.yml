@@ -19,6 +19,9 @@ jobs:
         run: pip install -r ./forejt/requirements.txt
         working-directory: ./
 
+      - name: Run Tests
+        run: pytest ./forejt/tests.py # Replace with your actual test command
+
       - name: Run script
         run: python ./forejt/main.py
 
