@@ -1,43 +1,76 @@
 <template>
-  <v-app>
-    <v-main>
-      <v-container class="text-center py-5"> 
-        <h1 class="display-1">Forejt</h1>
-      </v-container>
-      <v-container fluid>
-        <v-row align="center" justify="center">
-          <v-col cols="12" md="6" lg="4">
-            <v-card class="mx-auto mb-5">
-              <v-card-title class="text-center">
-                <span class="headline">Custom iCal Variants</span>
-              </v-card-title>
-              <v-card-actions class="justify-center">
-                <a :href="appleLink">
-                  <v-btn color="primary">Apple</v-btn>
-                </a>
-                <a :href="outlookLink">
-                  <v-btn color="primary">Outlook</v-btn>
-                </a>
-                <a :href="icsLink">
-                  <v-btn color="primary">.ics</v-btn>
-                </a>
-                <a :href="googleLink">
-                  <v-btn color="primary">Google</v-btn>
-                </a>
-              </v-card-actions>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-main>
-    <v-footer fixed padless>
-      <v-col class="text-center py-2" cols="12">
-        made with ❤️, by Jakub Werner
+  <v-container class="text-center py-2">
+    <v-row align="center" justify="center">
+      <v-col cols="auto">
+        <h1 class="display-1">Forejt calendar</h1>
       </v-col>
-    </v-footer>
-  </v-app>
-</template>
+    </v-row>
+    <v-row align="center" justify="center">
+      <v-col cols="auto">
+        <img src="@/assets/forejtlogo.jpg" alt="FC FOREJT" />
+      </v-col>
+    </v-row>
+  </v-container>
+  <v-container fluid>
+    <v-row align="center" justify="center">
+      <v-col cols="12" md="6" lg="4">
+        <v-card class="mx-auto mb-5">
+          <v-row class="justify-center">
+            <v-col cols="auto" class="text-center">
+              <a :href="googleLink">
+                <v-btn color="primary" icon>
+                  <img
+                    src="@/assets/Google_Calendar_icon_(2020).svg"
+                    alt="Google Calendar"
+                    width="40"
+                    height="40"
+                  />
+                </v-btn>
+              </a>
+              <div>Google</div>
+            </v-col>
+            <v-col cols="auto" class="text-center">
+              <a :href="appleLink">
+                <v-btn color="primary" icon>
+                  <img
+                    src="@/assets/Apple_Calendar_(iOS).svg"
+                    alt="Apple Calendar"
+                    width="40"
+                    height="40"
+                  />
+                </v-btn>
+              </a>
+              <div>Apple</div>
+            </v-col>
 
+            <v-col cols="auto" class="text-center">
+              <a :href="outlookLink">
+                <v-btn color="primary" icon>
+                  <img
+                    src="@/assets/Microsoft_Office_Outlook_(2018–present).svg"
+                    alt="Outlook"
+                    width="40"
+                    height="40"
+                  />
+                </v-btn>
+              </a>
+              <div>Outlook</div>
+            </v-col>
+
+            <v-col cols="auto" class="text-center">
+              <a :href="icsLink">
+                <v-btn color="primary" icon>
+                  <v-icon medium>mdi-calendar</v-icon>
+                </v-btn>
+              </a>
+              <div>Ics</div>
+            </v-col>
+          </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
 
 <script>
 export default {
@@ -58,3 +91,10 @@ export default {
   },
 };
 </script>
+
+<style>
+.neumorphic {
+  background: #f0f0f0;
+  box-shadow: 10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
+}
+</style>
