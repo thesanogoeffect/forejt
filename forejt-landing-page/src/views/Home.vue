@@ -7,14 +7,18 @@
             <v-card>
               <v-card-title> Custom iCal Variants </v-card-title>
               <v-card-actions>
-                <v-btn color="primary" @click="openLink('apple')">Apple</v-btn>
-                <v-btn color="primary" @click="openLink('outlook')"
-                  >Outlook</v-btn
-                >
-                <v-btn color="primary" @click="openLink('ics')">Ics</v-btn>
-                <v-btn color="primary" @click="openLink('google')"
-                  >Google</v-btn
-                >
+                <a :href="appleLink">
+                  <v-btn color="primary">Apple</v-btn>
+                </a>
+                <a :href="outlookLink">
+                  <v-btn color="primary">Outlook</v-btn>
+                </a>
+                <a :href="icsLink">
+                  <v-btn color="primary">Ics</v-btn>
+                </a>
+                <a :href="googleLink">
+                  <v-btn color="primary">Google</v-btn>
+                </a>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -26,22 +30,19 @@
 
 <script>
 export default {
-  methods: {
-    openLink(variant) {
-      const url = `https://thesanogoeffect.github.io/forejt/forejt.ics`;
+  computed: {
+    appleLink() {
+      return `webcal://thesanogoeffect.github.io/forejt/forejt.ics`;
+    },
+    outlookLink() {
+      return `webcal://thesanogoeffect.github.io/forejt/forejt.ics`;
+    },
+    icsLink() {
+      return `https://thesanogoeffect.github.io/forejt/forejt.ics`;
+    },
+    googleLink() {
       const webcal_url = `webcal://thesanogoeffect.github.io/forejt/forejt.ics`;
-      const google_cal_url = `https://www.google.com/calendar/render?cid=${webcal_url}`;
-      
-      if (variant === "apple") {
-        window.open(webcal_url);
-      } else if (variant === "outlook") {
-        window.open(webcal_url);
-      } else if (variant === "ics") {
-        window.open(url);
-      } else if (variant === "google") {
-        window.open(google_cal_url);
-      }
-      
+      return `https://www.google.com/calendar/render?cid=${webcal_url}`;
     },
   },
 };
