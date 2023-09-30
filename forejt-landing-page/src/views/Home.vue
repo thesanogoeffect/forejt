@@ -14,7 +14,7 @@
                   <v-btn color="primary">Outlook</v-btn>
                 </a>
                 <a :href="icsLink">
-                  <v-btn color="primary">Ics</v-btn>
+                  <v-btn color="primary">.ics</v-btn>
                 </a>
                 <a :href="googleLink">
                   <v-btn color="primary">Google</v-btn>
