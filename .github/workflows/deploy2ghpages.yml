@@ -1,0 +1,42 @@
+name: Deploy Forejt Landing Page
+on:
+  push:
+    paths:
+      - 'forejt-landing-page/**'
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      
+      - name: Install dependencies
+        run: cd forejt-landing-page && npm install
+      
+      - name: Build
+        run: cd forejt-landing-page && npm run build
+      
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: 'gh-pages'
+          path: './gh-pages'
+
+      - name: Deploy to gh-pages
+        run: |
+          cp -r forejt-landing-page/dist/* gh-pages/
+          cd gh-pages
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Deploy forejt-landing-page updates" || true
+          git push origin gh-pages
+        env :
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
