@@ -1,5 +1,5 @@
 <template>
-  <v-app class="main-background">
+  <v-app>
     <v-main>
       <router-view />
     </v-main>
@@ -23,7 +23,4 @@
 </script>
 
 <style scoped>
-  .main-background {
-    background-color: hwb(0 100% 0%);
-  }
 </style>

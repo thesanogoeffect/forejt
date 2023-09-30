@@ -100,16 +100,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .card-container {
-  padding: 20px;
+  padding: 15px;
   background-color:hwb(0 31% 67%);
   color: white;
 }
 
-.card-title {
-  margin-bottom: 20px;
-}
+
 
 .button-row {
   display: flex;
