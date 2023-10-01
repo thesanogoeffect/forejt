@@ -28,7 +28,7 @@ def create_future_events(cal, matches_df, scoreboard_df):
         team_2_pos, team_2_points = get_team_position_points(scoreboard_df, team_2)
         event.add('summary', f"{team_1} ({team_1_pos}.) vs. {team_2} ({team_2_pos}.), {match._5}")
         event.add('location', match._6)
-        event.add('description', f"{str(match.Kolo)}.kolo, hřiště: {match.Hřiště}\n{team_1}: {team_1_pos}., {team_1_points}b, {team_2}: {team_2_pos}., {team_2_points}b\n{match.Desc.lstrip()}")
+        event.add('description', f"{str(match.Kolo)}.kolo, hřiště: {match.Hřiště}\n\n{team_1}: {team_1_pos}., {team_1_points}b, {team_2}: {team_2_pos}., {team_2_points}b\n\n{match.Desc.lstrip()}")
         event.add('dtstart', pd.to_datetime(match.Datum + " " + match.Čas, dayfirst=True).tz_localize("Europe/Prague"))
         event.add('dtend', (pd.to_datetime(match.Datum + " " + match.Čas, dayfirst=True) + pd.Timedelta(minutes=75)).tz_localize("Europe/Prague"))
         cal.add_component(event)
