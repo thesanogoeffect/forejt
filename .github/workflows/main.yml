@@ -1,7 +1,7 @@
 name: Update Calendar Job
 on:
   schedule:
-    - cron: "2 6 * * *" # run daily
+    - cron: "2 21 * * *" # run daily
   push:
     branches:
       - main
@@ -45,11 +45,21 @@ jobs:
           ref: 'gh-pages'
           path: './gh-pages'
         
+      - name: Display files in forejt directory
+        run: ls -l ./forejt
+
+      - name: Display files in gh-pages directory
+        run: ls -l ./gh-pages
+
       - name: Check if ICS file is different
         id: diffcheck
         run: |
+          echo "Comparing ./forejt/forejt.ics with ./gh-pages/forejt.ics"
           diff ./forejt/forejt.ics ./gh-pages/forejt.ics || echo "changed=true" >> $GITHUB_ENV
-        continue-on-error: true  # The diff command will fail if files are different. This makes sure the workflow continues.
+        continue-on-error: true
+
+      - name: Display changed status
+        run: echo "Changed status is ${{ env.changed }}"
 
       - name: Move ICS file to gh-pages if different
         if: env.changed == 'true'
