@@ -39,23 +39,30 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+
+      - name: Upload forejt.ics as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: forejt-ics
+          path: ./forejt/forejt.ics
+
       - name: Checkout gh-pages branch
         uses: actions/checkout@v4
         with:
           ref: 'gh-pages'
           path: './gh-pages'
+
+      - name: Download forejt.ics from artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: forejt-ics
+          path: ./artifacts/
         
-      - name: Display files in forejt directory
-        run: ls -l ./forejt
-
-      - name: Display files in gh-pages directory
-        run: ls -l ./gh-pages
-
       - name: Check if ICS file is different
         id: diffcheck
         run: |
-          echo "Comparing ./forejt/forejt.ics with ./gh-pages/forejt.ics"
-          diff ./forejt/forejt.ics ./gh-pages/forejt.ics || echo "changed=true" >> $GITHUB_ENV
+          echo "Comparing ./artifacts/forejt.ics with ./gh-pages/forejt.ics"
+          diff ./artifacts/forejt.ics ./gh-pages/forejt.ics || echo "changed=true" >> $GITHUB_ENV
         continue-on-error: true
 
       - name: Display changed status
@@ -63,7 +70,7 @@ jobs:
 
       - name: Move ICS file to gh-pages if different
         if: env.changed == 'true'
-        run: cp ./forejt/forejt.ics ./gh-pages/
+        run: cp ./artifacts/forejt.ics ./gh-pages/
 
       - name: Commit and push to gh-pages if different
         if: env.changed == 'true'
