@@ -29,7 +29,10 @@ jobs:
         run: python ./forejt/main.py
 
       - name: Debug List Files
-        run: ls -la ./forejt/
+        run: |
+          ls -la ./forejt/
+          ls -la .
+
       
       - name: Upload forejt.ics as artifact
         uses: actions/upload-artifact@v3
