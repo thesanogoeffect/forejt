@@ -44,18 +44,25 @@ jobs:
         with:
           ref: 'gh-pages'
           path: './gh-pages'
-
-      - name: Move ICS file to gh-pages
+        
+      - name: Check if ICS file is different
+        id: diffcheck
         run: |
-          cp ./forejt/forejt.ics ./gh-pages/
+          diff ./forejt/forejt.ics ./gh-pages/forejt.ics || echo "changed=true" >> $GITHUB_ENV
+        continue-on-error: true  # The diff command will fail if files are different. This makes sure the workflow continues.
 
-      - name: Commit and push to gh-pages
+      - name: Move ICS file to gh-pages if different
+        if: env.changed == 'true'
+        run: cp ./forejt/forejt.ics ./gh-pages/
+
+      - name: Commit and push to gh-pages if different
+        if: env.changed == 'true'
         run: |
           cd ./gh-pages
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
           git add forejt.ics
-          git commit -m "Update Calendar ICS file" || true  # Will not fail if there's nothing to commit
+          git commit -m "Update Calendar ICS file"
           git push origin gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
