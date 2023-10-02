@@ -28,6 +28,9 @@ jobs:
       - name: Run script
         run: python ./forejt/main.py
 
+      - name: Debug List Files
+        run: ls -la ./forejt/
+      
       - name: Upload forejt.ics as artifact
         uses: actions/upload-artifact@v3
         with:
