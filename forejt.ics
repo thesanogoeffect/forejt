@@ -3,6 +3,18 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Surtep Beroun vs. Forejt FC (5:3)\, Motorlet
+DTSTART;TZID=Europe/Prague:20231011T203000
+DTEND;TZID=Europe/Prague:20231011T214500
+DESCRIPTION:4.kolo\, hřiště: MOTO4\nV areálu SK Motorlet Praha\, více
+  na www.sk-motorlet.cz\, www.fotbal-motorlet.cz . Kabiny a sprchy jsou v b
+ uňkách u horního fotbalového hřiště s UMT. UMT 3. generace\, osvět
+ lení . Hř. č.1 je vpravo za administrativní budovou oddílu\, č. 4 je
+  za fotbalovým hřištěm s UMT\, které je nad tribunou stadionu. Obuv: 
+ kopačky povoleny i s lisovanými kolíky.
+LOCATION:Butovická 592/35\, Praha 5
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Footside vs. Forejt FC (0:1)\, Aritma
 DTSTART;TZID=Europe/Prague:20230928T181500
 DTEND;TZID=Europe/Prague:20230928T193000
@@ -28,19 +40,6 @@ DESCRIPTION:1.kolo\, hřiště: STER3\nV areálu za sportovní halou. UMT
  3. generace\, osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. 
  Obuv: kopačky povoleny i s lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Surtep Beroun (10.) vs. Forejt FC (1.)\, Motorlet
-DTSTART;TZID=Europe/Prague:20231011T203000
-DTEND;TZID=Europe/Prague:20231011T214500
-DESCRIPTION:4.kolo\, hřiště: MOTO4\n\nSurtep Beroun: 10.\, 2b vs. Forej
- t FC: 1.\, 6b\n\nV areálu SK Motorlet Praha\, více na www.sk-motorlet.cz
- \, www.fotbal-motorlet.cz . Kabiny a sprchy jsou v buňkách u horního fo
- tbalového hřiště s UMT. UMT 3. generace\, osvětlení . Hř. č.1 je v
- pravo za administrativní budovou oddílu\, č. 4 je za fotbalovým hřiš
- těm s UMT\, které je nad tribunou stadionu. Obuv: kopačky povoleny i s 
- lisovanými kolíky.
-LOCATION:Butovická 592/35\, Praha 5
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Forejt FC (1.) vs. Quattro Formaggi (12.)\, Štěrboholy
