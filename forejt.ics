@@ -3,6 +3,15 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Forejt FC vs. Quattro Formaggi (0:6)\, Štěrboholy
+DTSTART;TZID=Europe/Prague:20231017T181500
+DTEND;TZID=Europe/Prague:20231017T193000
+DESCRIPTION:5.kolo\, hřiště: STER2\nV areálu za sportovní halou. UMT 
+ 3. generace\, osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. 
+ Obuv: kopačky povoleny i s lisovanými kolíky .
+LOCATION:U Školy 430\, Praha 10
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Surtep Beroun vs. Forejt FC (5:3)\, Motorlet
 DTSTART;TZID=Europe/Prague:20231011T203000
 DTEND;TZID=Europe/Prague:20231011T214500
@@ -39,16 +48,6 @@ DTEND;TZID=Europe/Prague:20230913T193000
 DESCRIPTION:1.kolo\, hřiště: STER3\nV areálu za sportovní halou. UMT 
  3. generace\, osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. 
  Obuv: kopačky povoleny i s lisovanými kolíky .
-LOCATION:U Školy 430\, Praha 10
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Forejt FC (3.) vs. Quattro Formaggi (12.)\, Štěrboholy
-DTSTART;TZID=Europe/Prague:20231017T181500
-DTEND;TZID=Europe/Prague:20231017T193000
-DESCRIPTION:5.kolo\, hřiště: STER2\n\nForejt FC: 3.\, 6b vs. Quattro Fo
- rmaggi: 12.\, 0b\n\nV areálu za sportovní halou. UMT 3. generace\, osvě
- tlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povo
- leny i s lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
