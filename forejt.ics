@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
-SUMMARY:Forejt FC vs. Quattro Formaggi (0:6)\, Štěrboholy
+SUMMARY:Forejt FC vs. Quattro Formaggi (-)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20231017T181500
 DTEND;TZID=Europe/Prague:20231017T193000
 DESCRIPTION:5.kolo\, hřiště: STER2\nV areálu za sportovní halou. UMT 
@@ -51,11 +51,11 @@ DESCRIPTION:1.kolo\, hřiště: STER3\nV areálu za sportovní halou. UMT
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Sherwood FC (2.) vs. Forejt FC (3.)\, Motorlet
+SUMMARY:Sherwood FC (4.) vs. Forejt FC (5.)\, Motorlet
 DTSTART;TZID=Europe/Prague:20231025T203000
 DTEND;TZID=Europe/Prague:20231025T214500
-DESCRIPTION:6.kolo\, hřiště: MOTO4\n\nSherwood FC: 2.\, 6b vs. Forejt F
- C: 3.\, 6b\n\nV areálu SK Motorlet Praha\, více na www.sk-motorlet.cz\, 
+DESCRIPTION:6.kolo\, hřiště: MOTO4\n\nSherwood FC: 4.\, 6b vs. Forejt F
+ C: 5.\, 6b\n\nV areálu SK Motorlet Praha\, více na www.sk-motorlet.cz\, 
  www.fotbal-motorlet.cz . Kabiny a sprchy jsou v buňkách u horního fotba
  lového hřiště s UMT. UMT 3. generace\, osvětlení . Hř. č.1 je vpra
  vo za administrativní budovou oddílu\, č. 4 je za fotbalovým hřiště
@@ -64,21 +64,21 @@ DESCRIPTION:6.kolo\, hřiště: MOTO4\n\nSherwood FC: 2.\, 6b vs. Forejt F
 LOCATION:Butovická 592/35\, Praha 5
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (3.) vs. Suchá dáseň AC (8.)\, Štěrboholy
+SUMMARY:Forejt FC (5.) vs. Suchá dáseň AC (6.)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20231031T204500
 DTEND;TZID=Europe/Prague:20231031T220000
-DESCRIPTION:7.kolo\, hřiště: STER3\n\nForejt FC: 3.\, 6b vs. Suchá dá
- seň AC: 8.\, 4b\n\nV areálu za sportovní halou. UMT 3. generace\, osvě
+DESCRIPTION:7.kolo\, hřiště: STER3\n\nForejt FC: 5.\, 6b vs. Suchá dá
+ seň AC: 6.\, 6b\n\nV areálu za sportovní halou. UMT 3. generace\, osvě
  tlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povo
  leny i s lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:El Barto (10.) vs. Forejt FC (3.)\, Motorlet
+SUMMARY:El Barto (10.) vs. Forejt FC (5.)\, Motorlet
 DTSTART;TZID=Europe/Prague:20231107T191500
 DTEND;TZID=Europe/Prague:20231107T203000
 DESCRIPTION:8.kolo\, hřiště: MOTO1\n\nEl Barto: 10.\, 3b vs. Forejt FC:
-  3.\, 6b\n\nV areálu SK Motorlet Praha\, více na www.sk-motorlet.cz\, ww
+  5.\, 6b\n\nV areálu SK Motorlet Praha\, více na www.sk-motorlet.cz\, ww
  w.fotbal-motorlet.cz . Kabiny a sprchy jsou v buňkách u horního fotbalo
  vého hřiště s UMT. UMT 3. generace\, osvětlení . Hř. č.1 je vpravo
   za administrativní budovou oddílu\, č. 4 je za fotbalovým hřištěm 
@@ -87,11 +87,11 @@ DESCRIPTION:8.kolo\, hřiště: MOTO1\n\nEl Barto: 10.\, 3b vs. Forejt FC:
 LOCATION:Butovická 592/35\, Praha 5
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (3.) vs. Masokombinát (5.)\, Motorlet
+SUMMARY:Forejt FC (5.) vs. Masokombinát (7.)\, Motorlet
 DTSTART;TZID=Europe/Prague:20231114T191500
 DTEND;TZID=Europe/Prague:20231114T203000
-DESCRIPTION:9.kolo\, hřiště: MOTO4\n\nForejt FC: 3.\, 6b vs. Masokombin
- át: 5.\, 4b\n\nV areálu SK Motorlet Praha\, více na www.sk-motorlet.cz\
+DESCRIPTION:9.kolo\, hřiště: MOTO4\n\nForejt FC: 5.\, 6b vs. Masokombin
+ át: 7.\, 4b\n\nV areálu SK Motorlet Praha\, více na www.sk-motorlet.cz\
  , www.fotbal-motorlet.cz . Kabiny a sprchy jsou v buňkách u horního fot
  balového hřiště s UMT. UMT 3. generace\, osvětlení . Hř. č.1 je vp
  ravo za administrativní budovou oddílu\, č. 4 je za fotbalovým hřišt
@@ -100,21 +100,21 @@ DESCRIPTION:9.kolo\, hřiště: MOTO4\n\nForejt FC: 3.\, 6b vs. Masokombin
 LOCATION:Butovická 592/35\, Praha 5
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Víťazný február FK (11.) vs. Forejt FC (3.)\, Štěrboholy
+SUMMARY:Víťazný február FK (11.) vs. Forejt FC (5.)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20231121T204500
 DTEND;TZID=Europe/Prague:20231121T220000
 DESCRIPTION:10.kolo\, hřiště: STER3\n\nVíťazný február FK: 11.\, 1b
-  vs. Forejt FC: 3.\, 6b\n\nV areálu za sportovní halou. UMT 3. generace\
+  vs. Forejt FC: 5.\, 6b\n\nV areálu za sportovní halou. UMT 3. generace\
  , osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopač
  ky povoleny i s lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (3.) vs. Pacienti FC (6.)\, Mikulova
+SUMMARY:Forejt FC (5.) vs. Pacienti FC (3.)\, Mikulova
 DTSTART;TZID=Europe/Prague:20231205T194500
 DTEND;TZID=Europe/Prague:20231205T210000
-DESCRIPTION:11.kolo\, hřiště: MIKU2\n\nForejt FC: 3.\, 6b vs. Pacienti 
- FC: 6.\, 4b\n\nSportovní areál Mikulovka\, více na www.mikulovka.cz . K
+DESCRIPTION:11.kolo\, hřiště: MIKU2\n\nForejt FC: 5.\, 6b vs. Pacienti 
+ FC: 3.\, 6b\n\nSportovní areál Mikulovka\, více na www.mikulovka.cz . K
  vůli stavbě v blízkosti areálu se významně zhoršila možnost parkov
  ání. Doporučujeme používat hromadnou dopravu. UMT 3. generace\, osvě
  tlení . Hř. č.1 je při pohledu od kabin na fotbalové hřiště bliž
