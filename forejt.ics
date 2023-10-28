@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
-SUMMARY:Sherwood FC vs. Forejt FC (9:2)\, Motorlet
+SUMMARY:Sherwood FC vs. Forejt FC (-)\, Motorlet
 DTSTART;TZID=Europe/Prague:20231025T203000
 DTEND;TZID=Europe/Prague:20231025T214500
 DESCRIPTION:6.kolo\, hřiště: MOTO4\nV areálu SK Motorlet Praha\, více
