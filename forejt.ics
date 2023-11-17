@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
-SUMMARY:Forejt FC vs. Masokombinát (2:2)\, Motorlet
+SUMMARY:Forejt FC vs. Masokombinát (-)\, Motorlet
 DTSTART;TZID=Europe/Prague:20231114T191500
 DTEND;TZID=Europe/Prague:20231114T203000
 DESCRIPTION:9.kolo\, hřiště: MOTO4\nV areálu SK Motorlet Praha\, více
