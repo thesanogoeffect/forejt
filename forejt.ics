@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
-SUMMARY:Forejt FC vs. Masokombinát (-)\, Motorlet
+SUMMARY:Forejt FC vs. Masokombinát (2:2)\, Motorlet
 DTSTART;TZID=Europe/Prague:20231114T191500
 DTEND;TZID=Europe/Prague:20231114T203000
 DESCRIPTION:9.kolo\, hřiště: MOTO4\nV areálu SK Motorlet Praha\, více
@@ -100,25 +100,25 @@ SUMMARY:Víťazný február FK (10.) vs. Forejt FC (7.)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20231121T204500
 DTEND;TZID=Europe/Prague:20231121T220000
 DESCRIPTION:10.kolo\, hřiště: STER3\n\nVíťazný február FK: 10.\, 3b
-  vs. Forejt FC: 7.\, 8b\n\nV areálu za sportovní halou. UMT 3. generace\
+  vs. Forejt FC: 7.\, 9b\n\nV areálu za sportovní halou. UMT 3. generace\
  , osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopač
  ky povoleny i s lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (7.) vs. Pacienti FC (5.)\, Mikulova
+SUMMARY:Forejt FC (7.) vs. Pacienti FC (4.)\, Mikulova
 DTSTART;TZID=Europe/Prague:20231205T194500
 DTEND;TZID=Europe/Prague:20231205T210000
-DESCRIPTION:11.kolo\, hřiště: MIKU2\n\nForejt FC: 7.\, 8b vs. Pacienti 
- FC: 5.\, 9b\n\nSportovní areál Mikulovka\, více na www.mikulovka.cz . K
- vůli stavbě v blízkosti areálu se významně zhoršila možnost parkov
- ání. Doporučujeme používat hromadnou dopravu. UMT 3. generace\, osvě
- tlení . Hř. č.1 je při pohledu od kabin na fotbalové hřiště bliž
- ší vpravo\, za ním je hřiště číslo 2. Hřiště číslo 3 je při 
- pohledu od kabin na fotbalové hřiště bližší vlevo\, za ním je hři
- ště číslo 4. Obuv: kopačky povoleny i s lisovanými kolíky. Poznámk
- a : Zápisy o utkání lze v době konání utkání vhodit do schránky n
- apravo od dveří do kantýny
+DESCRIPTION:11.kolo\, hřiště: MIKU2\n\nForejt FC: 7.\, 9b vs. Pacienti 
+ FC: 4.\, 11b\n\nSportovní areál Mikulovka\, více na www.mikulovka.cz . 
+ Kvůli stavbě v blízkosti areálu se významně zhoršila možnost parko
+ vání. Doporučujeme používat hromadnou dopravu. UMT 3. generace\, osv
+ ětlení . Hř. č.1 je při pohledu od kabin na fotbalové hřiště bli
+ žší vpravo\, za ním je hřiště číslo 2. Hřiště číslo 3 je př
+ i pohledu od kabin na fotbalové hřiště bližší vlevo\, za ním je h
+ řiště číslo 4. Obuv: kopačky povoleny i s lisovanými kolíky. Pozn
+ ámka : Zápisy o utkání lze v době konání utkání vhodit do schrán
+ ky napravo od dveří do kantýny
 LOCATION:Mikulova 1594/4\, Praha 4
 END:VEVENT
 END:VCALENDAR
