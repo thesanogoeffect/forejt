@@ -3,6 +3,15 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Víťazný február FK vs. Forejt FC (nan)\, Štěrboholy
+DTSTART;TZID=Europe/Prague:20231121T204500
+DTEND;TZID=Europe/Prague:20231121T220000
+DESCRIPTION:10.kolo\, hřiště: STER3\nV areálu za sportovní halou. UMT
+  3. generace\, osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále.
+  Obuv: kopačky povoleny i s lisovanými kolíky .
+LOCATION:U Školy 430\, Praha 10
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Forejt FC vs. Masokombinát (2:2)\, Motorlet
 DTSTART;TZID=Europe/Prague:20231114T191500
 DTEND;TZID=Europe/Prague:20231114T203000
@@ -96,20 +105,10 @@ DESCRIPTION:1.kolo\, hřiště: STER3\nV areálu za sportovní halou. UMT
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Víťazný február FK (10.) vs. Forejt FC (7.)\, Štěrboholy
-DTSTART;TZID=Europe/Prague:20231121T204500
-DTEND;TZID=Europe/Prague:20231121T220000
-DESCRIPTION:10.kolo\, hřiště: STER3\n\nVíťazný február FK: 10.\, 3b
-  vs. Forejt FC: 7.\, 9b\n\nV areálu za sportovní halou. UMT 3. generace\
- , osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopač
- ky povoleny i s lisovanými kolíky .
-LOCATION:U Školy 430\, Praha 10
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Forejt FC (7.) vs. Pacienti FC (4.)\, Mikulova
+SUMMARY:Forejt FC (6.) vs. Pacienti FC (4.)\, Mikulova
 DTSTART;TZID=Europe/Prague:20231205T194500
 DTEND;TZID=Europe/Prague:20231205T210000
-DESCRIPTION:11.kolo\, hřiště: MIKU2\n\nForejt FC: 7.\, 9b vs. Pacienti 
+DESCRIPTION:11.kolo\, hřiště: MIKU2\n\nForejt FC: 6.\, 9b vs. Pacienti 
  FC: 4.\, 11b\n\nSportovní areál Mikulovka\, více na www.mikulovka.cz . 
  Kvůli stavbě v blízkosti areálu se významně zhoršila možnost parko
  vání. Doporučujeme používat hromadnou dopravu. UMT 3. generace\, osv
