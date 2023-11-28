@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
-SUMMARY:Víťazný február FK vs. Forejt FC (-)\, Štěrboholy
+SUMMARY:Víťazný február FK vs. Forejt FC (0:3)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20231121T204500
 DTEND;TZID=Europe/Prague:20231121T220000
 DESCRIPTION:10.kolo\, hřiště: STER3\nV areálu za sportovní halou. UMT
@@ -105,13 +105,13 @@ DESCRIPTION:1.kolo\, hřiště: STER3\nV areálu za sportovní halou. UMT
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (6.) vs. Pacienti FC (5.)\, Mikulova
+SUMMARY:Forejt FC (6.) vs. Pacienti FC (4.)\, Mikulova
 DTSTART;TZID=Europe/Prague:20231205T194500
 DTEND;TZID=Europe/Prague:20231205T210000
-DESCRIPTION:11.kolo\, hřiště: MIKU2\n\nForejt FC: 6.\, 9b vs. Pacienti 
- FC: 5.\, 11b\n\nSportovní areál Mikulovka\, více na www.mikulovka.cz . 
- Kvůli stavbě v blízkosti areálu se významně zhoršila možnost parko
- vání. Doporučujeme používat hromadnou dopravu. UMT 3. generace\, osv
+DESCRIPTION:11.kolo\, hřiště: MIKU2\n\nForejt FC: 6.\, 11b vs. Pacienti
+  FC: 4.\, 13b\n\nSportovní areál Mikulovka\, více na www.mikulovka.cz .
+  Kvůli stavbě v blízkosti areálu se významně zhoršila možnost park
+ ování. Doporučujeme používat hromadnou dopravu. UMT 3. generace\, osv
  ětlení . Hř. č.1 je při pohledu od kabin na fotbalové hřiště bli
  žší vpravo\, za ním je hřiště číslo 2. Hřiště číslo 3 je př
  i pohledu od kabin na fotbalové hřiště bližší vlevo\, za ním je h
