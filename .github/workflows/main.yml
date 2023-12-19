@@ -1,7 +1,8 @@
 name: Update Calendar Job
 on:
   schedule:
-    - cron: "2 21 * * *" # run daily
+    # - cron: "2 21 * * *" # run daily
+    - cron: "0 0 31 2 *" # temporarily paused execution! comment this and uncomment the above line to run daily
   push:
     branches:
       - main
