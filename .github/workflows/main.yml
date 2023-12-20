@@ -1,11 +1,10 @@
 name: Update Calendar Job
 on:
-  schedule:
-    # - cron: "2 21 * * *" # run daily
-    - cron: "0 0 31 2 *" # temporarily paused execution! comment this and uncomment the above line to run daily
+  # schedule:
+    # - cron: "2 21 * * *" # run daily, uncomment when you want to run the job
   push:
     branches:
-      - main
+      - none # change to main when you want to run the job
 jobs:
   build:
     runs-on: ubuntu-latest
