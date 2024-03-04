@@ -91,8 +91,9 @@ def test_results_df(results_df):
     if PRESEASON:
         logging.info("Skipping results_df test because it's preseason")
         assert True
-    assert results_df.shape[1] == 8
-    assert all(x in results_df.columns for x in ['Datum', 'Čas', 'Hřiště', 'Kolo', 'Výsledek', 'Název hřiště', 'Pure adresa', 'Desc'])
+    else:
+        assert results_df.shape[1] == 8
+        assert all(x in results_df.columns for x in ['Datum', 'Čas', 'Hřiště', 'Kolo', 'Výsledek', 'Název hřiště', 'Pure adresa', 'Desc'])
 
 def test_scoreboard_df(scoreboard_df):
     # Tým	Odehrané zápasy	Počet výher	Počet remíz	Počet proher	Skóre	Počet bodů
