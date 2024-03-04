@@ -71,7 +71,7 @@ def results_df(all_dfs, pitches_df):
 
 @pytest.fixture(scope="module")
 def scoreboard_df(all_dfs):
-    scoreboard_df = all_dfs[2]
+    scoreboard_df = all_dfs[2] if not PRESEASON else all_dfs[0]
     logging.info(f"scoreboard_df columns: {scoreboard_df.columns}")
     logging.info(f"scoreboard_df head: {scoreboard_df.head()}")
     scoreboard_df.set_index("Tým", inplace=True)

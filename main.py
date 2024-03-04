@@ -95,7 +95,7 @@ if __name__ == "__main__":
         results_df = None
         logging.info("Skipping results_df because it's preseason")
 
-    scoreboard_df = matches_dfs[2]
+    scoreboard_df = matches_dfs[2] if not PRESEASON else matches_dfs[0]
     scoreboard_df.set_index("Tým", inplace=True)
 
 
