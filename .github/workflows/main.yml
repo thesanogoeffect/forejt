@@ -1,10 +1,10 @@
 name: Update Calendar Job
 on:
-  # schedule:
-    # - cron: "2 21 * * *" # run daily, uncomment when you want to run the job
+  schedule:
+    - cron: "2 21 * * *" # run daily, uncomment when you want to run the job
   push:
     branches:
-      - none # change to main when you want to run the job
+      - main # change to main when you want to run the job
 jobs:
   build:
     runs-on: ubuntu-latest
