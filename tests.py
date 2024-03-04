@@ -2,6 +2,8 @@ import pandas as pd
 import pytest
 import logging
 
+
+PRESEASON = True
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
 '''Currently tests only the scraping part'''
@@ -36,7 +38,8 @@ def pitches_df():
 
 @pytest.fixture(scope="module")
 def matches_df(all_dfs, pitches_df):
-    matches_df = all_dfs[3]
+    matches_df = all_dfs[3] if not PRESEASON else all_dfs[1]
+
     logging.info(f"Found {len(matches_df)} matches")
     logging.info(f"matches_df columns: {matches_df.columns}")
     logging.info(f"matches_df head: {matches_df.head()}")
@@ -51,6 +54,9 @@ def matches_df(all_dfs, pitches_df):
 
 @pytest.fixture(scope="module")
 def results_df(all_dfs, pitches_df):
+    if PRESEASON:
+        logging.info("Skipping results_df test because it's preseason")
+        return None
     results_df = all_dfs[0]
     logging.info(f"results_df columns: {results_df.columns}")
     logging.info(f"results_df head: {results_df.head()}")
@@ -82,6 +88,9 @@ def test_matches_df(matches_df):
 
 
 def test_results_df(results_df):
+    if PRESEASON:
+        logging.info("Skipping results_df test because it's preseason")
+        assert True
     assert results_df.shape[1] == 8
     assert all(x in results_df.columns for x in ['Datum', 'Čas', 'Hřiště', 'Kolo', 'Výsledek', 'Název hřiště', 'Pure adresa', 'Desc'])
 

@@ -4,6 +4,7 @@ from pytz import timezone
 from icalendar import Calendar, Event
 import logging
 
+PRESEASON = True
 tz = timezone("Europe/Prague")
 email_list = set()
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
@@ -64,7 +65,7 @@ if __name__ == "__main__":
     matches_dfs = pd.read_html("https://www.psmf.cz/souteze/2024-hanspaulska-liga-jaro/7-b/tymy/forejt-fc/")
 
     logging.info("Successfully read matches and results")
-    matches_df = matches_dfs[3]
+    matches_df = matches_dfs[3] if not PRESEASON else matches_dfs[1]
     matches_df["Domácí - Hosté"] = matches_df["Domácí - Hosté"].str.replace("  ", " vs. ")
     matches_df["Zkratka hřiště base"] = matches_df["Hřiště"].str.extract('(^[A-Z]+)', expand=True)
     matches_df = matches_df.merge(pitches_df, how='left', on='Zkratka hřiště base')
@@ -77,18 +78,22 @@ if __name__ == "__main__":
     logging.info(f"matches_df head: {matches_df.head()}")
     logging.info(f"matches_df shape: {matches_df.shape}")
 
-    results_df = matches_dfs[0]
-    results_df["Domácí - Hosté"] = results_df["Domácí - Hosté"].str.replace("  ", " vs. ")
-    results_df["Zkratka hřiště base"] = results_df["Hřiště"].str.extract('(^[A-Z]+)', expand=True)
-    results_df = results_df.merge(pitches_df, how='left', on='Zkratka hřiště base')
-    results_df = results_df.drop(["Adresa areálů (hřišť) a další informace", "Zkratka hřiště", "Zkratka hřiště base"], axis=1)
-    results_df["Datum"] = results_df["Datum"].str.replace("[A-Za-zÚČá]+", "", regex=True).str.replace('\xa0', '')
-    results_df["Kolo"] = results_df["Kolo"].astype(int)
-    results_df = results_df.set_index("Domácí - Hosté")
-    logging.info(f"Found {len(results_df)} results")
-    logging.info(f"results_df columns: {results_df.columns}")
-    logging.info(f"results_df head: {results_df.head()}")
-    logging.info(f"results_df shape: {results_df.shape}")
+    if not PRESEASON:
+        results_df = matches_dfs[0]
+        results_df["Domácí - Hosté"] = results_df["Domácí - Hosté"].str.replace("  ", " vs. ")
+        results_df["Zkratka hřiště base"] = results_df["Hřiště"].str.extract('(^[A-Z]+)', expand=True)
+        results_df = results_df.merge(pitches_df, how='left', on='Zkratka hřiště base')
+        results_df = results_df.drop(["Adresa areálů (hřišť) a další informace", "Zkratka hřiště", "Zkratka hřiště base"], axis=1)
+        results_df["Datum"] = results_df["Datum"].str.replace("[A-Za-zÚČá]+", "", regex=True).str.replace('\xa0', '')
+        results_df["Kolo"] = results_df["Kolo"].astype(int)
+        results_df = results_df.set_index("Domácí - Hosté")
+        logging.info(f"Found {len(results_df)} results")
+        logging.info(f"results_df columns: {results_df.columns}")
+        logging.info(f"results_df head: {results_df.head()}")
+        logging.info(f"results_df shape: {results_df.shape}")
+    else:
+        results_df = None
+        logging.info("Skipping results_df because it's preseason")
 
     scoreboard_df = matches_dfs[2]
     scoreboard_df.set_index("Tým", inplace=True)
@@ -100,7 +105,10 @@ if __name__ == "__main__":
     cal['PRODID'] = '-//Forejt//FC Forejt//CZ'
 
     try:
-        cal = create_past_events(cal, results_df)
+        if not PRESEASON:
+            cal = create_past_events(cal, results_df)
+        else:
+            logging.info("Skipping past events because it's preseason")
     except Exception as e:
         logging.warning(f"An error occurred while creating past events: {e}")
 
