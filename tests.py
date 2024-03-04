@@ -1,5 +1,8 @@
 import pandas as pd
 import pytest
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
 '''Currently tests only the scraping part'''
 
@@ -34,6 +37,9 @@ def pitches_df():
 @pytest.fixture(scope="module")
 def matches_df(all_dfs, pitches_df):
     matches_df = all_dfs[3]
+    logging.info(f"Found {len(matches_df)} matches")
+    logging.info(f"matches_df columns: {matches_df.columns}")
+    logging.info(f"matches_df head: {matches_df.head()}")
     matches_df["Domácí - Hosté"] = matches_df["Domácí - Hosté"].str.replace("  ", " vs. ")
     matches_df["Zkratka hřiště base"] = matches_df["Hřiště"].str.extract('(^[A-Z]+)', expand=True)
     matches_df = matches_df.merge(pitches_df, how='left', on='Zkratka hřiště base')
@@ -46,6 +52,8 @@ def matches_df(all_dfs, pitches_df):
 @pytest.fixture(scope="module")
 def results_df(all_dfs, pitches_df):
     results_df = all_dfs[0]
+    logging.info(f"results_df columns: {results_df.columns}")
+    logging.info(f"results_df head: {results_df.head()}")
     results_df["Domácí - Hosté"] = results_df["Domácí - Hosté"].str.replace("  ", " vs. ")
     results_df["Zkratka hřiště base"] = results_df["Hřiště"].str.extract('(^[A-Z]+)', expand=True)
     results_df = results_df.merge(pitches_df, how='left', on='Zkratka hřiště base')
@@ -58,6 +66,8 @@ def results_df(all_dfs, pitches_df):
 @pytest.fixture(scope="module")
 def scoreboard_df(all_dfs):
     scoreboard_df = all_dfs[2]
+    logging.info(f"scoreboard_df columns: {scoreboard_df.columns}")
+    logging.info(f"scoreboard_df head: {scoreboard_df.head()}")
     scoreboard_df.set_index("Tým", inplace=True)
     return scoreboard_df
 
