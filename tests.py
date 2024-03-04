@@ -1,9 +1,10 @@
 import pandas as pd
 import pytest
 import logging
+import datetime 
 
-
-PRESEASON = True
+# if it's before 18th of March 2024, it's preseason
+PRESEASON = datetime.datetime.now() < datetime.datetime(2024, 3, 18)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
 '''Currently tests only the scraping part'''
