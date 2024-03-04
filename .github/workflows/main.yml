@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: forejt-ics
-          path: ./forejt.ics
+          path: ./artifacts/forejt.ics
 
       - name: Checkout gh-pages branch
         uses: actions/checkout@v4
