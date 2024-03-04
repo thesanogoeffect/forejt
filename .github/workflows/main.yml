@@ -50,7 +50,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: forejt-ics
-          path: ./artifacts/.forejt.ics
+          path: ./artifacts/forejt.ics
         
       - name: Check if ICS file is different
         id: diffcheck
