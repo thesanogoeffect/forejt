@@ -4,7 +4,7 @@ from pytz import timezone
 from icalendar import Calendar, Event
 import logging
 
-PRESEASON = datetime.datetime.now() < datetime.datetime(2024, 3, 18)
+PRESEASON = datetime.now() < datetime(2024, 3, 18)
 tz = timezone("Europe/Prague")
 email_list = set()
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
