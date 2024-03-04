@@ -16,7 +16,7 @@ jobs:
           path: "./forejt"
 
       - name: Setup Python
-        uses: actions/setup-python@v4.7.0
+        uses: actions/setup-python@v4
 
       - name: Install dependencies
         run: pip install -r ./forejt/requirements.txt
@@ -35,7 +35,7 @@ jobs:
 
       
       - name: Upload forejt.ics as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: forejt-ics
           path: ./forejt.ics
