@@ -32,13 +32,12 @@ jobs:
         run: |
           ls -la ./forejt/
           ls -la .
-
       
       - name: Upload forejt.ics as artifact
         uses: actions/upload-artifact@v4
         with:
           name: forejt-ics
-          path: /artifacts/forejt.ics
+          path: ./forejt/forejt.ics
 
       - name: Checkout gh-pages branch
         uses: actions/checkout@v4
@@ -50,7 +49,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: forejt-ics
-          path: /artifacts/forejt.ics
+          path: ./gh-pages/
         
       - name: Check if ICS file is different
         id: diffcheck
