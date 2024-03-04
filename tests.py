@@ -14,7 +14,7 @@ def get_team_position_points(scoreboard_df, team_name):
 @pytest.fixture(scope="module")
 def all_dfs():
     try:
-        dfs = pd.read_html("https://www.psmf.cz/souteze/2023-hanspaulska-liga-podzim/7-d/tymy/forejt-fc/")
+        dfs = pd.read_html("https://www.psmf.cz/souteze/2024-hanspaulska-liga-jaro/7-b/tymy/forejt-fc/")
         return dfs
     except Exception as e:
         pytest.fail(f"Failed to fetch DataFrames: {e}")
