@@ -3,6 +3,21 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Forejt FC vs. PFC Kodymka B (4:3)\, Na Šancích
+DTSTART;TZID=Europe/Prague:20240408T180000
+DTEND;TZID=Europe/Prague:20240408T191500
+DESCRIPTION:3.kolo\, hřiště: SANC1\nV areálu Tenis Hostivař\, více n
+ a www.scmecholupy.cz . UMT 3.generace\, osvětlení . Hř. č.1 je při po
+ hledu od kabin na fotbalové hřiště bližší než hřiště č.2. Obuv
+ : povoleny maximálně turfy\, gumotextilní kopačky a sálová obuv . V 
+ "lisovkách" se hrát nesmí ! Na hřišti č.2 se od 31.10.2022 hraje v h
+ ale. Poznámka : kabiny jsou uprostřed areálu vpravo mezi restaurací Na
+  Šancích a fotbalovým hřištěm (= pod úrovní hřiště) . Pokud UO 
+ nebude svítit\, dojděte o rozsvícení požádat do recepce Tenisu Hosti
+ vař - pod úrovni hřiště\, mezi parkovištěm a a kurty .
+LOCATION:Turínská 1483/3\, Praha 10
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:New Jersey Devils B vs. Forejt FC (4:1)\, Kbely Spartak
 DTSTART;TZID=Europe/Prague:20240325T183000
 DTEND;TZID=Europe/Prague:20240325T194500
@@ -20,22 +35,6 @@ DESCRIPTION:1.kolo\, hřiště: STER2\nV areálu za sportovní halou. UMT
  3. generace\, osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. 
  Obuv: kopačky povoleny i s lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Forejt FC (11.) vs. PFC Kodymka B (5.)\, Na Šancích
-DTSTART;TZID=Europe/Prague:20240408T180000
-DTEND;TZID=Europe/Prague:20240408T191500
-DESCRIPTION:3.kolo\, hřiště: SANC1\n\nForejt FC: 11.\, 0b vs. PFC Kodym
- ka B: 5.\, 2b\n\nV areálu Tenis Hostivař\, více na www.scmecholupy.cz .
-  UMT 3.generace\, osvětlení . Hř. č.1 je při pohledu od kabin na fotb
- alové hřiště bližší než hřiště č.2. Obuv: povoleny maximálně
-  turfy\, gumotextilní kopačky a sálová obuv . V "lisovkách" se hrát 
- nesmí ! Na hřišti č.2 se od 31.10.2022 hraje v hale. Poznámka : kabin
- y jsou uprostřed areálu vpravo mezi restaurací Na Šancích a fotbalov
- ým hřištěm (= pod úrovní hřiště) . Pokud UO nebude svítit\, dojd
- ěte o rozsvícení požádat do recepce Tenisu Hostivař - pod úrovni h
- řiště\, mezi parkovištěm a a kurty .
-LOCATION:Turínská 1483/3\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Orgasmico L.S.D. (9.) vs. Forejt FC (11.)\, Hanspaulka
