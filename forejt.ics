@@ -3,6 +3,16 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Orgasmico L.S.D. vs. Forejt FC (1:4)\, Hanspaulka
+DTSTART;TZID=Europe/Prague:20240415T193000
+DTEND;TZID=Europe/Prague:20240415T204500
+DESCRIPTION:4.kolo\, hřiště: HANSP\nVe Sportovním areálu Hanspaulka\,
+  více na www.sporthanspaulka.cz . UMT 3. generace\, osvětlení . Obuv: p
+ ovoleny kopačky turfy\, gumotextilní a sálové\, „lisovky“ zakázá
+ ny !
+LOCATION:Na Hanspaulce 166/2\, Praha 6
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Forejt FC vs. PFC Kodymka B (4:3)\, Na Šancích
 DTSTART;TZID=Europe/Prague:20240408T180000
 DTEND;TZID=Europe/Prague:20240408T191500
@@ -37,20 +47,10 @@ DESCRIPTION:1.kolo\, hřiště: STER2\nV areálu za sportovní halou. UMT
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Orgasmico L.S.D. (10.) vs. Forejt FC (8.)\, Hanspaulka
-DTSTART;TZID=Europe/Prague:20240415T193000
-DTEND;TZID=Europe/Prague:20240415T204500
-DESCRIPTION:4.kolo\, hřiště: HANSP\n\nOrgasmico L.S.D.: 10.\, 1b vs. Fo
- rejt FC: 8.\, 2b\n\nVe Sportovním areálu Hanspaulka\, více na www.sport
- hanspaulka.cz . UMT 3. generace\, osvětlení . Obuv: povoleny kopačky tu
- rfy\, gumotextilní a sálové\, „lisovky“ zakázány !
-LOCATION:Na Hanspaulce 166/2\, Praha 6
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Forejt FC (8.) vs. Pražská legie 2000 (11.)\, Mikulova
+SUMMARY:Forejt FC (9.) vs. Pražská legie 2000 (11.)\, Mikulova
 DTSTART;TZID=Europe/Prague:20240422T194500
 DTEND;TZID=Europe/Prague:20240422T210000
-DESCRIPTION:5.kolo\, hřiště: MIKU4\n\nForejt FC: 8.\, 2b vs. Pražská 
+DESCRIPTION:5.kolo\, hřiště: MIKU4\n\nForejt FC: 9.\, 2b vs. Pražská 
  legie 2000: 11.\, 1b\n\nSportovní areál Mikulovka\, více na www.mikulov
  ka.cz . Kvůli stavbě v blízkosti areálu se významně zhoršila možno
  st parkování. Doporučujeme používat hromadnou dopravu. UMT 3. generac
@@ -63,21 +63,21 @@ DESCRIPTION:5.kolo\, hřiště: MIKU4\n\nForejt FC: 8.\, 2b vs. Pražská
 LOCATION:Mikulova 1594/4\, Praha 4
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Banana Chiquíta (7.) vs. Forejt FC (8.)\, Štěrboholy
+SUMMARY:Banana Chiquíta (5.) vs. Forejt FC (9.)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20240430T193000
 DTEND;TZID=Europe/Prague:20240430T204500
-DESCRIPTION:6.kolo\, hřiště: STER1\n\nBanana Chiquíta: 7.\, 2b vs. For
- ejt FC: 8.\, 2b\n\nV areálu za sportovní halou. UMT 3. generace\, osvět
+DESCRIPTION:6.kolo\, hřiště: STER1\n\nBanana Chiquíta: 5.\, 3b vs. For
+ ejt FC: 9.\, 2b\n\nV areálu za sportovní halou. UMT 3. generace\, osvět
  lení . Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povol
  eny i s lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (8.) vs. Cirkus Praha (1.)\, Hrabákova
+SUMMARY:Forejt FC (9.) vs. Cirkus Praha (2.)\, Hrabákova
 DTSTART;TZID=Europe/Prague:20240506T180000
 DTEND;TZID=Europe/Prague:20240506T191500
-DESCRIPTION:7.kolo\, hřiště: HRAB2\n\nForejt FC: 8.\, 2b vs. Cirkus Pra
- ha: 1.\, 4b\n\nVe Sportovním areálu Hrabákova\, více na www.jihomestsk
+DESCRIPTION:7.kolo\, hřiště: HRAB2\n\nForejt FC: 9.\, 2b vs. Cirkus Pra
+ ha: 2.\, 4b\n\nVe Sportovním areálu Hrabákova\, více na www.jihomestsk
  a.cz/sportovni-areal-hrabakova . UMT 3. generace\, osvětlení . Hř. č.1
   je při pohledu od restaurace zcela vpravo\, č. 3 naopak zcela vlevo. . 
  Obuv: povoleny kopačky turfy\, gumotextilní a sálové\, „lisovky“ z
@@ -87,31 +87,31 @@ DESCRIPTION:7.kolo\, hřiště: HRAB2\n\nForejt FC: 8.\, 2b vs. Cirkus Pra
 LOCATION:Hrabákova 2001/21\, Praha 4
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (8.) vs. Namo FC (9.)\, Štěrboholy
+SUMMARY:Forejt FC (9.) vs. Namo FC (8.)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20240520T204500
 DTEND;TZID=Europe/Prague:20240520T220000
-DESCRIPTION:8.kolo\, hřiště: STER3\n\nForejt FC: 8.\, 2b vs. Namo FC: 9
- .\, 1b\n\nV areálu za sportovní halou. UMT 3. generace\, osvětlení . H
+DESCRIPTION:8.kolo\, hřiště: STER3\n\nForejt FC: 9.\, 2b vs. Namo FC: 8
+ .\, 2b\n\nV areálu za sportovní halou. UMT 3. generace\, osvětlení . H
  ř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povoleny i s l
  isovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Galantní jeleni (12.) vs. Forejt FC (8.)\, Štěrboholy
+SUMMARY:Galantní jeleni (12.) vs. Forejt FC (9.)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20240604T204500
 DTEND;TZID=Europe/Prague:20240604T220000
 DESCRIPTION:9.kolo\, hřiště: STER2\n\nGalantní jeleni: 12.\, 0b vs. Fo
- rejt FC: 8.\, 2b\n\nV areálu za sportovní halou. UMT 3. generace\, osvě
+ rejt FC: 9.\, 2b\n\nV areálu za sportovní halou. UMT 3. generace\, osvě
  tlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povo
  leny i s lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (8.) vs. Greenhorns FC (6.)\, Meteor 8
+SUMMARY:Forejt FC (9.) vs. Greenhorns FC (7.)\, Meteor 8
 DTSTART;TZID=Europe/Prague:20240611T190000
 DTEND;TZID=Europe/Prague:20240611T201500
-DESCRIPTION:10.kolo\, hřiště: METE2\n\nForejt FC: 8.\, 2b vs. Greenhorn
- s FC: 6.\, 2b\n\n\, více na www.fkmeteorpraha.cz . UMT 3. generace\, osv
+DESCRIPTION:10.kolo\, hřiště: METE2\n\nForejt FC: 9.\, 2b vs. Greenhorn
+ s FC: 7.\, 2b\n\n\, více na www.fkmeteorpraha.cz . UMT 3. generace\, osv
  ětlení . Hř. č.1 je blíže kabinám\, tj. dál od vchodu do areálu. 
  Obuv: kopačky povoleny i s lisovanými kolíky . Poznámka : kabiny a spr
  chy jsou v budově pod restaurací\, tedy až za "hlavním" travnatým hř
@@ -119,11 +119,11 @@ DESCRIPTION:10.kolo\, hřiště: METE2\n\nForejt FC: 8.\, 2b vs. Greenhorn
 LOCATION:U Meteoru 29/3\, Praha 8 V areálu FK Meteor Praha 8
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Lokál United (3.) vs. Forejt FC (8.)\, Běchovice 2
+SUMMARY:Lokál United (3.) vs. Forejt FC (9.)\, Běchovice 2
 DTSTART;TZID=Europe/Prague:20240624T181500
 DTEND;TZID=Europe/Prague:20240624T193000
 DESCRIPTION:11.kolo\, hřiště: BECH\n\nLokál United: 3.\, 4b vs. Forejt
-  FC: 8.\, 2b\n\nV areálu Sokola Běchovice\, více na www.sokolbechovice.
+  FC: 9.\, 2b\n\nV areálu Sokola Běchovice\, více na www.sokolbechovice.
  cz . UMT 3. generace\, osvětlení . Obuv: povoleny maximálně turfy\, gu
  motextilní kopačky a sálová obuv .  V "lisovkách" se hrát nesmí !
 LOCATION:Na Korunce 580\, Praha 9
