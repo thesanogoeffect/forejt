@@ -73,11 +73,11 @@ DESCRIPTION:6.kolo\, hřiště: STER1\n\nBanana Chiquíta: 6.\, 3b vs. For
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (10.) vs. Cirkus Praha (3.)\, Hrabákova
+SUMMARY:Forejt FC (10.) vs. Cirkus Praha (4.)\, Hrabákova
 DTSTART;TZID=Europe/Prague:20240506T180000
 DTEND;TZID=Europe/Prague:20240506T191500
 DESCRIPTION:7.kolo\, hřiště: HRAB2\n\nForejt FC: 10.\, 2b vs. Cirkus Pr
- aha: 3.\, 4b\n\nVe Sportovním areálu Hrabákova\, více na www.jihomests
+ aha: 4.\, 4b\n\nVe Sportovním areálu Hrabákova\, více na www.jihomests
  ka.cz/sportovni-areal-hrabakova . UMT 3. generace\, osvětlení . Hř. č.
  1 je při pohledu od restaurace zcela vpravo\, č. 3 naopak zcela vlevo. .
   Obuv: povoleny kopačky turfy\, gumotextilní a sálové\, „lisovky“ 
@@ -107,11 +107,11 @@ DESCRIPTION:9.kolo\, hřiště: STER2\n\nGalantní jeleni: 12.\, 0b vs. Fo
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (10.) vs. Greenhorns FC (4.)\, Meteor 8
+SUMMARY:Forejt FC (10.) vs. Greenhorns FC (5.)\, Meteor 8
 DTSTART;TZID=Europe/Prague:20240611T190000
 DTEND;TZID=Europe/Prague:20240611T201500
 DESCRIPTION:10.kolo\, hřiště: METE2\n\nForejt FC: 10.\, 2b vs. Greenhor
- ns FC: 4.\, 4b\n\n\, více na www.fkmeteorpraha.cz . UMT 3. generace\, osv
+ ns FC: 5.\, 4b\n\n\, více na www.fkmeteorpraha.cz . UMT 3. generace\, osv
  ětlení . Hř. č.1 je blíže kabinám\, tj. dál od vchodu do areálu. 
  Obuv: kopačky povoleny i s lisovanými kolíky . Poznámka : kabiny a spr
  chy jsou v budově pod restaurací\, tedy až za "hlavním" travnatým hř
@@ -119,10 +119,10 @@ DESCRIPTION:10.kolo\, hřiště: METE2\n\nForejt FC: 10.\, 2b vs. Greenhor
 LOCATION:U Meteoru 29/3\, Praha 8 V areálu FK Meteor Praha 8
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Lokál United (5.) vs. Forejt FC (10.)\, Běchovice 2
+SUMMARY:Lokál United (1.) vs. Forejt FC (10.)\, Běchovice 2
 DTSTART;TZID=Europe/Prague:20240624T181500
 DTEND;TZID=Europe/Prague:20240624T193000
-DESCRIPTION:11.kolo\, hřiště: BECH\n\nLokál United: 5.\, 4b vs. Forejt
+DESCRIPTION:11.kolo\, hřiště: BECH\n\nLokál United: 1.\, 6b vs. Forejt
   FC: 10.\, 2b\n\nV areálu Sokola Běchovice\, více na www.sokolbechovice
  .cz . UMT 3. generace\, osvětlení . Obuv: povoleny maximálně turfy\, g
  umotextilní kopačky a sálová obuv .  V "lisovkách" se hrát nesmí !
