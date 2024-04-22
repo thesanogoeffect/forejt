@@ -3,6 +3,21 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Forejt FC vs. Pražská legie 2000 (0:2)\, Mikulova
+DTSTART;TZID=Europe/Prague:20240422T194500
+DTEND;TZID=Europe/Prague:20240422T210000
+DESCRIPTION:5.kolo\, hřiště: MIKU4\nSportovní areál Mikulovka\, více
+  na www.mikulovka.cz . Kvůli stavbě v blízkosti areálu se významně z
+ horšila možnost parkování. Doporučujeme používat hromadnou dopravu.
+  UMT 3. generace\, osvětlení . Hř. č.1 je při pohledu od kabin na fot
+ balové hřiště bližší vpravo\, za ním je hřiště číslo 2. Hři
+ ště číslo 3 je při pohledu od kabin na fotbalové hřiště bližší
+  vlevo\, za ním je hřiště číslo 4. Obuv: kopačky povoleny i s lisov
+ anými kolíky. Poznámka : Zápisy o utkání lze v době konání utkán
+ í vhodit do schránky napravo od dveří do kantýny
+LOCATION:Mikulova 1594/4\, Praha 4
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Orgasmico L.S.D. vs. Forejt FC (-)\, Hanspaulka
 DTSTART;TZID=Europe/Prague:20240415T193000
 DTEND;TZID=Europe/Prague:20240415T204500
@@ -47,37 +62,21 @@ DESCRIPTION:1.kolo\, hřiště: STER2\nV areálu za sportovní halou. UMT
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (10.) vs. Pražská legie 2000 (7.)\, Mikulova
-DTSTART;TZID=Europe/Prague:20240422T194500
-DTEND;TZID=Europe/Prague:20240422T210000
-DESCRIPTION:5.kolo\, hřiště: MIKU4\n\nForejt FC: 10.\, 2b vs. Pražská
-  legie 2000: 7.\, 3b\n\nSportovní areál Mikulovka\, více na www.mikulov
- ka.cz . Kvůli stavbě v blízkosti areálu se významně zhoršila možno
- st parkování. Doporučujeme používat hromadnou dopravu. UMT 3. generac
- e\, osvětlení . Hř. č.1 je při pohledu od kabin na fotbalové hřišt
- ě bližší vpravo\, za ním je hřiště číslo 2. Hřiště číslo 3 
- je při pohledu od kabin na fotbalové hřiště bližší vlevo\, za ním
-  je hřiště číslo 4. Obuv: kopačky povoleny i s lisovanými kolíky. 
- Poznámka : Zápisy o utkání lze v době konání utkání vhodit do sch
- ránky napravo od dveří do kantýny
-LOCATION:Mikulova 1594/4\, Praha 4
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Banana Chiquíta (6.) vs. Forejt FC (10.)\, Štěrboholy
+SUMMARY:Banana Chiquíta (4.) vs. Forejt FC (10.)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20240430T193000
 DTEND;TZID=Europe/Prague:20240430T204500
-DESCRIPTION:6.kolo\, hřiště: STER1\n\nBanana Chiquíta: 6.\, 3b vs. For
+DESCRIPTION:6.kolo\, hřiště: STER1\n\nBanana Chiquíta: 4.\, 5b vs. For
  ejt FC: 10.\, 2b\n\nV areálu za sportovní halou. UMT 3. generace\, osvě
  tlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povo
  leny i s lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (10.) vs. Cirkus Praha (4.)\, Hrabákova
+SUMMARY:Forejt FC (10.) vs. Cirkus Praha (5.)\, Hrabákova
 DTSTART;TZID=Europe/Prague:20240506T180000
 DTEND;TZID=Europe/Prague:20240506T191500
 DESCRIPTION:7.kolo\, hřiště: HRAB2\n\nForejt FC: 10.\, 2b vs. Cirkus Pr
- aha: 4.\, 4b\n\nVe Sportovním areálu Hrabákova\, více na www.jihomests
+ aha: 5.\, 4b\n\nVe Sportovním areálu Hrabákova\, více na www.jihomests
  ka.cz/sportovni-areal-hrabakova . UMT 3. generace\, osvětlení . Hř. č.
  1 je při pohledu od restaurace zcela vpravo\, č. 3 naopak zcela vlevo. .
   Obuv: povoleny kopačky turfy\, gumotextilní a sálové\, „lisovky“ 
@@ -107,11 +106,11 @@ DESCRIPTION:9.kolo\, hřiště: STER2\n\nGalantní jeleni: 12.\, 0b vs. Fo
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (10.) vs. Greenhorns FC (5.)\, Meteor 8
+SUMMARY:Forejt FC (10.) vs. Greenhorns FC (6.)\, Meteor 8
 DTSTART;TZID=Europe/Prague:20240611T190000
 DTEND;TZID=Europe/Prague:20240611T201500
 DESCRIPTION:10.kolo\, hřiště: METE2\n\nForejt FC: 10.\, 2b vs. Greenhor
- ns FC: 5.\, 4b\n\n\, více na www.fkmeteorpraha.cz . UMT 3. generace\, osv
+ ns FC: 6.\, 4b\n\n\, více na www.fkmeteorpraha.cz . UMT 3. generace\, osv
  ětlení . Hř. č.1 je blíže kabinám\, tj. dál od vchodu do areálu. 
  Obuv: kopačky povoleny i s lisovanými kolíky . Poznámka : kabiny a spr
  chy jsou v budově pod restaurací\, tedy až za "hlavním" travnatým hř
@@ -119,10 +118,10 @@ DESCRIPTION:10.kolo\, hřiště: METE2\n\nForejt FC: 10.\, 2b vs. Greenhor
 LOCATION:U Meteoru 29/3\, Praha 8 V areálu FK Meteor Praha 8
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Lokál United (1.) vs. Forejt FC (10.)\, Běchovice 2
+SUMMARY:Lokál United (3.) vs. Forejt FC (10.)\, Běchovice 2
 DTSTART;TZID=Europe/Prague:20240624T181500
 DTEND;TZID=Europe/Prague:20240624T193000
-DESCRIPTION:11.kolo\, hřiště: BECH\n\nLokál United: 1.\, 6b vs. Forejt
+DESCRIPTION:11.kolo\, hřiště: BECH\n\nLokál United: 3.\, 6b vs. Forejt
   FC: 10.\, 2b\n\nV areálu Sokola Běchovice\, více na www.sokolbechovice
  .cz . UMT 3. generace\, osvětlení . Obuv: povoleny maximálně turfy\, g
  umotextilní kopačky a sálová obuv .  V "lisovkách" se hrát nesmí !
