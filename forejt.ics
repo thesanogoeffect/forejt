@@ -3,6 +3,15 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Banana Chiquíta vs. Forejt FC (0:2)\, Štěrboholy
+DTSTART;TZID=Europe/Prague:20240430T193000
+DTEND;TZID=Europe/Prague:20240430T204500
+DESCRIPTION:6.kolo\, hřiště: STER1\nV areálu za sportovní halou. UMT 
+ 3. generace\, osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. 
+ Obuv: kopačky povoleny i s lisovanými kolíky .
+LOCATION:U Školy 430\, Praha 10
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Forejt FC vs. Pražská legie 2000 (0:2)\, Mikulova
 DTSTART;TZID=Europe/Prague:20240422T194500
 DTEND;TZID=Europe/Prague:20240422T210000
@@ -62,21 +71,11 @@ DESCRIPTION:1.kolo\, hřiště: STER2\nV areálu za sportovní halou. UMT
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Banana Chiquíta (5.) vs. Forejt FC (9.)\, Štěrboholy
-DTSTART;TZID=Europe/Prague:20240430T193000
-DTEND;TZID=Europe/Prague:20240430T204500
-DESCRIPTION:6.kolo\, hřiště: STER1\n\nBanana Chiquíta: 5.\, 5b vs. For
- ejt FC: 9.\, 4b\n\nV areálu za sportovní halou. UMT 3. generace\, osvět
- lení . Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povol
- eny i s lisovanými kolíky .
-LOCATION:U Školy 430\, Praha 10
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Forejt FC (9.) vs. Cirkus Praha (7.)\, Hrabákova
+SUMMARY:Forejt FC (9.) vs. Cirkus Praha (5.)\, Hrabákova
 DTSTART;TZID=Europe/Prague:20240506T180000
 DTEND;TZID=Europe/Prague:20240506T191500
 DESCRIPTION:7.kolo\, hřiště: HRAB2\n\nForejt FC: 9.\, 4b vs. Cirkus Pra
- ha: 7.\, 4b\n\nVe Sportovním areálu Hrabákova\, více na www.jihomestsk
+ ha: 5.\, 6b\n\nVe Sportovním areálu Hrabákova\, více na www.jihomestsk
  a.cz/sportovni-areal-hrabakova . UMT 3. generace\, osvětlení . Hř. č.1
   je při pohledu od restaurace zcela vpravo\, č. 3 naopak zcela vlevo. . 
  Obuv: povoleny kopačky turfy\, gumotextilní a sálové\, „lisovky“ z
@@ -86,11 +85,11 @@ DESCRIPTION:7.kolo\, hřiště: HRAB2\n\nForejt FC: 9.\, 4b vs. Cirkus Pra
 LOCATION:Hrabákova 2001/21\, Praha 4
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (9.) vs. Namo FC (10.)\, Štěrboholy
+SUMMARY:Forejt FC (9.) vs. Namo FC (11.)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20240520T204500
 DTEND;TZID=Europe/Prague:20240520T220000
 DESCRIPTION:8.kolo\, hřiště: STER3\n\nForejt FC: 9.\, 4b vs. Namo FC: 1
- 0.\, 2b\n\nV areálu za sportovní halou. UMT 3. generace\, osvětlení . 
+ 1.\, 2b\n\nV areálu za sportovní halou. UMT 3. generace\, osvětlení . 
  Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povoleny i s 
  lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
