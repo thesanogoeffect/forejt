@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
-SUMMARY:Banana Chiquíta vs. Forejt FC (0:2)\, Štěrboholy
+SUMMARY:Banana Chiquíta vs. Forejt FC (-)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20240430T193000
 DTEND;TZID=Europe/Prague:20240430T204500
 DESCRIPTION:6.kolo\, hřiště: STER1\nV areálu za sportovní halou. UMT 
@@ -98,7 +98,7 @@ BEGIN:VEVENT
 SUMMARY:Galantní jeleni (12.) vs. Forejt FC (9.)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20240604T204500
 DTEND;TZID=Europe/Prague:20240604T220000
-DESCRIPTION:9.kolo\, hřiště: STER2\n\nGalantní jeleni: 12.\, 0b vs. Fo
+DESCRIPTION:9.kolo\, hřiště: STER2\n\nGalantní jeleni: 12.\, 2b vs. Fo
  rejt FC: 9.\, 4b\n\nV areálu za sportovní halou. UMT 3. generace\, osvě
  tlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povo
  leny i s lisovanými kolíky .
