@@ -3,6 +3,19 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Forejt FC vs. Cirkus Praha (4:3)\, Hrabákova
+DTSTART;TZID=Europe/Prague:20240506T180000
+DTEND;TZID=Europe/Prague:20240506T191500
+DESCRIPTION:7.kolo\, hřiště: HRAB2\nVe Sportovním areálu Hrabákova\,
+  více na www.jihomestska.cz/sportovni-areal-hrabakova . UMT 3. generace\,
+  osvětlení . Hř. č.1 je při pohledu od restaurace zcela vpravo\, č. 
+ 3 naopak zcela vlevo. . Obuv: povoleny kopačky turfy\, gumotextilní a s
+ álové\, „lisovky“ zakázány ! Poznámka : přísný zákaz vjezdu m
+ otorových vozidel účastníků soutěží PSMF do areálu (nejsnazší p
+ arkování ve Westfield Chodov) .
+LOCATION:Hrabákova 2001/21\, Praha 4
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Banana Chiquíta vs. Forejt FC (-)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20240430T193000
 DTEND;TZID=Europe/Prague:20240430T204500
@@ -71,20 +84,6 @@ DESCRIPTION:1.kolo\, hřiště: STER2\nV areálu za sportovní halou. UMT
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (9.) vs. Cirkus Praha (5.)\, Hrabákova
-DTSTART;TZID=Europe/Prague:20240506T180000
-DTEND;TZID=Europe/Prague:20240506T191500
-DESCRIPTION:7.kolo\, hřiště: HRAB2\n\nForejt FC: 9.\, 4b vs. Cirkus Pra
- ha: 5.\, 6b\n\nVe Sportovním areálu Hrabákova\, více na www.jihomestsk
- a.cz/sportovni-areal-hrabakova . UMT 3. generace\, osvětlení . Hř. č.1
-  je při pohledu od restaurace zcela vpravo\, č. 3 naopak zcela vlevo. . 
- Obuv: povoleny kopačky turfy\, gumotextilní a sálové\, „lisovky“ z
- akázány ! Poznámka : přísný zákaz vjezdu motorových vozidel účas
- tníků soutěží PSMF do areálu (nejsnazší parkování ve Westfield C
- hodov) .
-LOCATION:Hrabákova 2001/21\, Praha 4
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Forejt FC (9.) vs. Namo FC (11.)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20240520T204500
 DTEND;TZID=Europe/Prague:20240520T220000
@@ -105,11 +104,11 @@ DESCRIPTION:9.kolo\, hřiště: STER2\n\nGalantní jeleni: 12.\, 2b vs. Fo
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (9.) vs. Greenhorns FC (8.)\, Meteor 8
+SUMMARY:Forejt FC (9.) vs. Greenhorns FC (6.)\, Meteor 8
 DTSTART;TZID=Europe/Prague:20240611T190000
 DTEND;TZID=Europe/Prague:20240611T201500
 DESCRIPTION:10.kolo\, hřiště: METE2\n\nForejt FC: 9.\, 4b vs. Greenhorn
- s FC: 8.\, 4b\n\n\, více na www.fkmeteorpraha.cz . UMT 3. generace\, osv
+ s FC: 6.\, 6b\n\n\, více na www.fkmeteorpraha.cz . UMT 3. generace\, osv
  ětlení . Hř. č.1 je blíže kabinám\, tj. dál od vchodu do areálu. 
  Obuv: kopačky povoleny i s lisovanými kolíky . Poznámka : kabiny a spr
  chy jsou v budově pod restaurací\, tedy až za "hlavním" travnatým hř
