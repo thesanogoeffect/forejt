@@ -84,11 +84,11 @@ DESCRIPTION:1.kolo\, hřiště: STER2\nV areálu za sportovní halou. UMT
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (4.) vs. Namo FC (11.)\, Štěrboholy
+SUMMARY:Forejt FC (4.) vs. Namo FC (10.)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20240520T204500
 DTEND;TZID=Europe/Prague:20240520T220000
 DESCRIPTION:8.kolo\, hřiště: STER3\n\nForejt FC: 4.\, 8b vs. Namo FC: 1
- 1.\, 2b\n\nV areálu za sportovní halou. UMT 3. generace\, osvětlení . 
+ 0.\, 4b\n\nV areálu za sportovní halou. UMT 3. generace\, osvětlení . 
  Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povoleny i s 
  lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
@@ -104,11 +104,11 @@ DESCRIPTION:9.kolo\, hřiště: STER2\n\nGalantní jeleni: 12.\, 2b vs. Fo
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (4.) vs. Greenhorns FC (7.)\, Meteor 8
+SUMMARY:Forejt FC (4.) vs. Greenhorns FC (8.)\, Meteor 8
 DTSTART;TZID=Europe/Prague:20240611T190000
 DTEND;TZID=Europe/Prague:20240611T201500
 DESCRIPTION:10.kolo\, hřiště: METE2\n\nForejt FC: 4.\, 8b vs. Greenhorn
- s FC: 7.\, 6b\n\n\, více na www.fkmeteorpraha.cz . UMT 3. generace\, osv
+ s FC: 8.\, 6b\n\n\, více na www.fkmeteorpraha.cz . UMT 3. generace\, osv
  ětlení . Hř. č.1 je blíže kabinám\, tj. dál od vchodu do areálu. 
  Obuv: kopačky povoleny i s lisovanými kolíky . Poznámka : kabiny a spr
  chy jsou v budově pod restaurací\, tedy až za "hlavním" travnatým hř
