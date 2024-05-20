@@ -3,6 +3,15 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Forejt FC vs. Namo FC (nan)\, Štěrboholy
+DTSTART;TZID=Europe/Prague:20240520T204500
+DTEND;TZID=Europe/Prague:20240520T220000
+DESCRIPTION:8.kolo\, hřiště: STER3\nV areálu za sportovní halou. UMT 
+ 3. generace\, osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. 
+ Obuv: kopačky povoleny i s lisovanými kolíky .
+LOCATION:U Školy 430\, Praha 10
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Forejt FC vs. Cirkus Praha (4:3)\, Hrabákova
 DTSTART;TZID=Europe/Prague:20240506T180000
 DTEND;TZID=Europe/Prague:20240506T191500
@@ -81,16 +90,6 @@ DTEND;TZID=Europe/Prague:20240319T204500
 DESCRIPTION:1.kolo\, hřiště: STER2\nV areálu za sportovní halou. UMT 
  3. generace\, osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. 
  Obuv: kopačky povoleny i s lisovanými kolíky .
-LOCATION:U Školy 430\, Praha 10
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Forejt FC (5.) vs. Namo FC (9.)\, Štěrboholy
-DTSTART;TZID=Europe/Prague:20240520T204500
-DTEND;TZID=Europe/Prague:20240520T220000
-DESCRIPTION:8.kolo\, hřiště: STER3\n\nForejt FC: 5.\, 8b vs. Namo FC: 9
- .\, 6b\n\nV areálu za sportovní halou. UMT 3. generace\, osvětlení . H
- ř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povoleny i s l
- isovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
