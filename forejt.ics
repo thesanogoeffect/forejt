@@ -3,6 +3,17 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Forejt FC vs. Greenhorns FC (1:1)\, Meteor 8
+DTSTART;TZID=Europe/Prague:20240611T190000
+DTEND;TZID=Europe/Prague:20240611T201500
+DESCRIPTION:10.kolo\, hřiště: METE2\n\, více na www.fkmeteorpraha.cz .
+  UMT 3. generace\, osvětlení . Hř. č.1 je blíže kabinám\, tj. dál 
+ od vchodu do areálu. Obuv: kopačky povoleny i s lisovanými kolíky . Po
+ známka : kabiny a sprchy jsou v budově pod restaurací\, tedy až za "hl
+ avním" travnatým hřištěm .
+LOCATION:U Meteoru 29/3\, Praha 8 V areálu FK Meteor Praha 8
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Galantní jeleni vs. Forejt FC (2:2)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20240604T204500
 DTEND;TZID=Europe/Prague:20240604T220000
@@ -100,18 +111,6 @@ DESCRIPTION:1.kolo\, hřiště: STER2\nV areálu za sportovní halou. UMT
  3. generace\, osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. 
  Obuv: kopačky povoleny i s lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Forejt FC (4.) vs. Greenhorns FC (7.)\, Meteor 8
-DTSTART;TZID=Europe/Prague:20240611T190000
-DTEND;TZID=Europe/Prague:20240611T201500
-DESCRIPTION:10.kolo\, hřiště: METE2\n\nForejt FC: 4.\, 10b vs. Greenhor
- ns FC: 7.\, 9b\n\n\, více na www.fkmeteorpraha.cz . UMT 3. generace\, osv
- ětlení . Hř. č.1 je blíže kabinám\, tj. dál od vchodu do areálu. 
- Obuv: kopačky povoleny i s lisovanými kolíky . Poznámka : kabiny a spr
- chy jsou v budově pod restaurací\, tedy až za "hlavním" travnatým hř
- ištěm .
-LOCATION:U Meteoru 29/3\, Praha 8 V areálu FK Meteor Praha 8
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Lokál United (2.) vs. Forejt FC (4.)\, Běchovice 2
