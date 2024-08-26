@@ -179,6 +179,9 @@ def test_results_df(results_df):
 
 def test_scoreboard_df(scoreboard_df):
     # Tým	Odehrané zápasy	Počet výher	Počet remíz	Počet proher	Skóre	Počet bodů
+    if PRESEASON:
+        logging.info("Skipping results_df test because it's preseason")
+        assert True
     assert scoreboard_df.shape[1] == 7
     assert all(
         x in scoreboard_df.columns
