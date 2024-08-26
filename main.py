@@ -62,7 +62,7 @@ if __name__ == "__main__":
     logging.info(f"pitches_df shape: {pitches_df.shape}")
     logging.info("Fetching matches and results...")
 
-    matches_dfs = pd.read_html("https://www.psmf.cz/souteze/2024-hanspaulska-liga-jaro/7-b/tymy/forejt-fc/")
+    matches_dfs = pd.read_html("https://www.psmf.cz/souteze/2024-hanspaulska-liga-podzim/7-c/tymy/forejt-fc/")
 
     logging.info("Successfully read matches and results")
     matches_df = matches_dfs[3] if not PRESEASON else matches_dfs[1]
