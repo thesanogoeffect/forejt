@@ -3,13 +3,13 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
-SUMMARY:Diablos Blancos C.F. (4.) vs. Forejt FC (5.)\, Litvínovská
+SUMMARY:Diablos Blancos C.F. vs. Forejt FC (6:1)\, Litvínovská
 DTSTART;TZID=Europe/Prague:20240903T204500
 DTEND;TZID=Europe/Prague:20240903T220000
-DESCRIPTION:1.kolo\, hřiště: LITVI\n\nDiablos Blancos C.F.: 4.\, 0b vs.
-  Forejt FC: 5.\, 0b\n\nV areálu Sportcentrum Prosek\, více na www.sportc
- entrumprosek.cz . UMT 3. generace\, osvětlení . Obuv: povoleny kopačky 
- turfy\, gumotextilní a sálové\, „lisovky“ zakázány !
+DESCRIPTION:1.kolo\, hřiště: LITVI\nV areálu Sportcentrum Prosek\, ví
+ ce na www.sportcentrumprosek.cz . UMT 3. generace\, osvětlení . Obuv: po
+ voleny kopačky turfy\, gumotextilní a sálové\, „lisovky“ zakázán
+ y !
 LOCATION:Litvínovská 500/5\, Praha 9
 END:VEVENT
 BEGIN:VEVENT
