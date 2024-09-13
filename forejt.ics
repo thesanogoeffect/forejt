@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
-SUMMARY:Víťazný február FK vs. Forejt FC (12:0)\, Motorlet
+SUMMARY:Víťazný február FK vs. Forejt FC (-)\, Motorlet
 DTSTART;TZID=Europe/Prague:20240910T203000
 DTEND;TZID=Europe/Prague:20240910T214500
 DESCRIPTION:2.kolo\, hřiště: MOTO1\nV areálu SK Motorlet Praha\, více
@@ -55,10 +55,10 @@ DESCRIPTION:5.kolo\, hřiště: CESMI\n\nForejt FC: 11.\, 0b vs. Libeň SK
 LOCATION:Smrčinská 3346/5\, Praha 5
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Medvědi B (7.) vs. Forejt FC (11.)\, Pražačka
+SUMMARY:Medvědi B (1.) vs. Forejt FC (11.)\, Pražačka
 DTSTART;TZID=Europe/Prague:20241022T204500
 DTEND;TZID=Europe/Prague:20241022T220000
-DESCRIPTION:6.kolo\, hřiště: P1\n\nMedvědi B: 7.\, 1b vs. Forejt FC: 1
+DESCRIPTION:6.kolo\, hřiště: P1\n\nMedvědi B: 1.\, 3b vs. Forejt FC: 1
  1.\, 0b\n\nVe „Sportovním a rekreačním areálu“ Pražačka\, více 
  na www.prazacka.cz\, UMT 3. generace\, osvětlení . Hř. č.1 je nejblí
  že kabinám\, č. 3 je nejvzdálenější. Obuv: kopačky povoleny i s li
@@ -67,20 +67,20 @@ DESCRIPTION:6.kolo\, hřiště: P1\n\nMedvědi B: 7.\, 1b vs. Forejt FC: 1
 LOCATION:Za Žižkovskou vozovnou 2716/19\, Praha 3
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (11.) vs. Tatran Válec (5.)\, Běchovice 2
+SUMMARY:Forejt FC (11.) vs. Tatran Válec (6.)\, Běchovice 2
 DTSTART;TZID=Europe/Prague:20241105T204500
 DTEND;TZID=Europe/Prague:20241105T220000
 DESCRIPTION:7.kolo\, hřiště: BECH\n\nForejt FC: 11.\, 0b vs. Tatran Vá
- lec: 5.\, 2b\n\nV areálu Sokola Běchovice\, více na www.sokolbechovice.
+ lec: 6.\, 2b\n\nV areálu Sokola Běchovice\, více na www.sokolbechovice.
  cz . UMT 3. generace\, osvětlení . Obuv: povoleny maximálně turfy\, gu
  motextilní kopačky a sálová obuv .  V "lisovkách" se hrát nesmí !
 LOCATION:Na Korunce 580\, Praha 9
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Netopýr TFC (6.) vs. Forejt FC (11.)\, Hrabákova
+SUMMARY:Netopýr TFC (7.) vs. Forejt FC (11.)\, Hrabákova
 DTSTART;TZID=Europe/Prague:20241112T180000
 DTEND;TZID=Europe/Prague:20241112T191500
-DESCRIPTION:8.kolo\, hřiště: HRAB1\n\nNetopýr TFC: 6.\, 1b vs. Forejt 
+DESCRIPTION:8.kolo\, hřiště: HRAB1\n\nNetopýr TFC: 7.\, 1b vs. Forejt 
  FC: 11.\, 0b\n\nVe Sportovním areálu Hrabákova\, více na www.jihomests
  ka.cz/sportovni-areal-hrabakova . UMT 3. generace\, osvětlení . Hř. č.
  1 je při pohledu od restaurace zcela vpravo\, č. 3 naopak zcela vlevo. .
@@ -91,11 +91,11 @@ DESCRIPTION:8.kolo\, hřiště: HRAB1\n\nNetopýr TFC: 6.\, 1b vs. Forejt
 LOCATION:Hrabákova 2001/21\, Praha 4
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (11.) vs. Modrá vopice TJ (2.)\, Pražačka
+SUMMARY:Forejt FC (11.) vs. Modrá vopice TJ (5.)\, Pražačka
 DTSTART;TZID=Europe/Prague:20241119T204500
 DTEND;TZID=Europe/Prague:20241119T220000
 DESCRIPTION:9.kolo\, hřiště: P3\n\nForejt FC: 11.\, 0b vs. Modrá vopic
- e TJ: 2.\, 2b\n\nVe „Sportovním a rekreačním areálu“ Pražačka\, 
+ e TJ: 5.\, 2b\n\nVe „Sportovním a rekreačním areálu“ Pražačka\, 
  více na www.prazacka.cz\, UMT 3. generace\, osvětlení . Hř. č.1 je ne
  jblíže kabinám\, č. 3 je nejvzdálenější. Obuv: kopačky povoleny i
   s lisovanými kolíky . Poznámka : Zápisy o utkání lze vhodit do schr
@@ -103,10 +103,10 @@ DESCRIPTION:9.kolo\, hřiště: P3\n\nForejt FC: 11.\, 0b vs. Modrá vopic
 LOCATION:Za Žižkovskou vozovnou 2716/19\, Praha 3
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Braník City (1.) vs. Forejt FC (11.)\, Čechie Smíchov
+SUMMARY:Braník City (2.) vs. Forejt FC (11.)\, Čechie Smíchov
 DTSTART;TZID=Europe/Prague:20241126T204500
 DTEND;TZID=Europe/Prague:20241126T220000
-DESCRIPTION:10.kolo\, hřiště: CESMI\n\nBraník City: 1.\, 2b vs. Forejt
+DESCRIPTION:10.kolo\, hřiště: CESMI\n\nBraník City: 2.\, 2b vs. Forejt
   FC: 11.\, 0b\n\nV areálu SK Čechie Smíchov\, více na www.cechiesmicho
  v.cz . UMT 3. generace\, osvětlení . Obuv: povoleny kopačky turfy\, gum
  otextilní a sálové\, „lisovky“ zakázány !
