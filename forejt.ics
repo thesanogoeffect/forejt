@@ -3,6 +3,15 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Forejt FC vs. Greenhorns FC (nan)\, Aritma
+DTSTART;TZID=Europe/Prague:20240917T204500
+DTEND;TZID=Europe/Prague:20240917T220000
+DESCRIPTION:3.kolo\, hřiště: ARIT\nV areálu SK Aritma Praha\, více na
+  www.skaritma.cz . UMT 3. generace\, osvětlení . Obuv: povoleny kopačky
+  turfy\, gumotextilní a sálové\, „lisovky“ zakázány!
+LOCATION:Nad Lávkou 672/5\, Praha 6
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Víťazný február FK vs. Forejt FC (12:0)\, Motorlet
 DTSTART;TZID=Europe/Prague:20240910T203000
 DTEND;TZID=Europe/Prague:20240910T214500
@@ -23,16 +32,6 @@ DESCRIPTION:1.kolo\, hřiště: LITVI\nV areálu Sportcentrum Prosek\, ví
  voleny kopačky turfy\, gumotextilní a sálové\, „lisovky“ zakázán
  y !
 LOCATION:Litvínovská 500/5\, Praha 9
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Forejt FC (12.) vs. Greenhorns FC (8.)\, Aritma
-DTSTART;TZID=Europe/Prague:20240917T204500
-DTEND;TZID=Europe/Prague:20240917T220000
-DESCRIPTION:3.kolo\, hřiště: ARIT\n\nForejt FC: 12.\, 0b vs. Greenhorns
-  FC: 8.\, 2b\n\nV areálu SK Aritma Praha\, více na www.skaritma.cz . UMT
-  3. generace\, osvětlení . Obuv: povoleny kopačky turfy\, gumotextilní
-  a sálové\, „lisovky“ zakázány!
-LOCATION:Nad Lávkou 672/5\, Praha 6
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Instinct FC (11.) vs. Forejt FC (12.)\, Štěrboholy
