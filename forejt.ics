@@ -34,30 +34,30 @@ DESCRIPTION:1.kolo\, hřiště: LITVI\nV areálu Sportcentrum Prosek\, ví
 LOCATION:Litvínovská 500/5\, Praha 9
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Instinct FC (11.) vs. Forejt FC (12.)\, Štěrboholy
+SUMMARY:Instinct FC (10.) vs. Forejt FC (12.)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20241001T193000
 DTEND;TZID=Europe/Prague:20241001T204500
-DESCRIPTION:4.kolo\, hřiště: STER2\n\nInstinct FC: 11.\, 0b vs. Forejt 
+DESCRIPTION:4.kolo\, hřiště: STER2\n\nInstinct FC: 10.\, 1b vs. Forejt 
  FC: 12.\, 0b\n\nV areálu za sportovní halou. UMT 3. generace\, osvětlen
  í . Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povoleny
   i s lisovanými kolíky .
 LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (12.) vs. Libeň SK A (10.)\, Čechie Smíchov
+SUMMARY:Forejt FC (12.) vs. Libeň SK A (11.)\, Čechie Smíchov
 DTSTART;TZID=Europe/Prague:20241015T204500
 DTEND;TZID=Europe/Prague:20241015T220000
 DESCRIPTION:5.kolo\, hřiště: CESMI\n\nForejt FC: 12.\, 0b vs. Libeň SK
-  A: 10.\, 0b\n\nV areálu SK Čechie Smíchov\, více na www.cechiesmichov
+  A: 11.\, 0b\n\nV areálu SK Čechie Smíchov\, více na www.cechiesmichov
  .cz . UMT 3. generace\, osvětlení . Obuv: povoleny kopačky turfy\, gumo
  textilní a sálové\, „lisovky“ zakázány !
 LOCATION:Smrčinská 3346/5\, Praha 5
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Medvědi B (4.) vs. Forejt FC (12.)\, Pražačka
+SUMMARY:Medvědi B (5.) vs. Forejt FC (12.)\, Pražačka
 DTSTART;TZID=Europe/Prague:20241022T204500
 DTEND;TZID=Europe/Prague:20241022T220000
-DESCRIPTION:6.kolo\, hřiště: P1\n\nMedvědi B: 4.\, 3b vs. Forejt FC: 1
+DESCRIPTION:6.kolo\, hřiště: P1\n\nMedvědi B: 5.\, 3b vs. Forejt FC: 1
  2.\, 0b\n\nVe „Sportovním a rekreačním areálu“ Pražačka\, více 
  na www.prazacka.cz\, UMT 3. generace\, osvětlení . Hř. č.1 je nejblí
  že kabinám\, č. 3 je nejvzdálenější. Obuv: kopačky povoleny i s li
@@ -90,11 +90,11 @@ DESCRIPTION:8.kolo\, hřiště: HRAB1\n\nNetopýr TFC: 9.\, 1b vs. Forejt
 LOCATION:Hrabákova 2001/21\, Praha 4
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (12.) vs. Modrá vopice TJ (6.)\, Pražačka
+SUMMARY:Forejt FC (12.) vs. Modrá vopice TJ (7.)\, Pražačka
 DTSTART;TZID=Europe/Prague:20241119T204500
 DTEND;TZID=Europe/Prague:20241119T220000
 DESCRIPTION:9.kolo\, hřiště: P3\n\nForejt FC: 12.\, 0b vs. Modrá vopic
- e TJ: 6.\, 2b\n\nVe „Sportovním a rekreačním areálu“ Pražačka\, 
+ e TJ: 7.\, 2b\n\nVe „Sportovním a rekreačním areálu“ Pražačka\, 
  více na www.prazacka.cz\, UMT 3. generace\, osvětlení . Hř. č.1 je ne
  jblíže kabinám\, č. 3 je nejvzdálenější. Obuv: kopačky povoleny i
   s lisovanými kolíky . Poznámka : Zápisy o utkání lze vhodit do schr
