@@ -3,6 +3,15 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Instinct FC vs. Forejt FC (nan)\, Štěrboholy
+DTSTART;TZID=Europe/Prague:20241001T193000
+DTEND;TZID=Europe/Prague:20241001T204500
+DESCRIPTION:4.kolo\, hřiště: STER2\nV areálu za sportovní halou. UMT 
+ 3. generace\, osvětlení . Hř. č.1 je nejblíže hale\, č.3 nejdále. 
+ Obuv: kopačky povoleny i s lisovanými kolíky .
+LOCATION:U Školy 430\, Praha 10
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Forejt FC vs. Greenhorns FC (2:8)\, Aritma
 DTSTART;TZID=Europe/Prague:20240917T204500
 DTEND;TZID=Europe/Prague:20240917T220000
@@ -32,16 +41,6 @@ DESCRIPTION:1.kolo\, hřiště: LITVI\nV areálu Sportcentrum Prosek\, ví
  voleny kopačky turfy\, gumotextilní a sálové\, „lisovky“ zakázán
  y !
 LOCATION:Litvínovská 500/5\, Praha 9
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Instinct FC (10.) vs. Forejt FC (12.)\, Štěrboholy
-DTSTART;TZID=Europe/Prague:20241001T193000
-DTEND;TZID=Europe/Prague:20241001T204500
-DESCRIPTION:4.kolo\, hřiště: STER2\n\nInstinct FC: 10.\, 1b vs. Forejt 
- FC: 12.\, 0b\n\nV areálu za sportovní halou. UMT 3. generace\, osvětlen
- í . Hř. č.1 je nejblíže hale\, č.3 nejdále. Obuv: kopačky povoleny
-  i s lisovanými kolíky .
-LOCATION:U Školy 430\, Praha 10
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Forejt FC (12.) vs. Libeň SK A (11.)\, Čechie Smíchov
