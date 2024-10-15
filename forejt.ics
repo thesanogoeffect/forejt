@@ -3,6 +3,15 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Forejt FC vs. Libeň SK A (nan)\, Čechie Smíchov
+DTSTART;TZID=Europe/Prague:20241015T204500
+DTEND;TZID=Europe/Prague:20241015T220000
+DESCRIPTION:5.kolo\, hřiště: CESMI\nV areálu SK Čechie Smíchov\, ví
+ ce na www.cechiesmichov.cz . UMT 3. generace\, osvětlení . Obuv: povolen
+ y kopačky turfy\, gumotextilní a sálové\, „lisovky“ zakázány !
+LOCATION:Smrčinská 3346/5\, Praha 5
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Instinct FC vs. Forejt FC (3:3)\, Štěrboholy
 DTSTART;TZID=Europe/Prague:20241001T193000
 DTEND;TZID=Europe/Prague:20241001T204500
@@ -41,16 +50,6 @@ DESCRIPTION:1.kolo\, hřiště: LITVI\nV areálu Sportcentrum Prosek\, ví
  voleny kopačky turfy\, gumotextilní a sálové\, „lisovky“ zakázán
  y !
 LOCATION:Litvínovská 500/5\, Praha 9
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Forejt FC (11.) vs. Libeň SK A (12.)\, Čechie Smíchov
-DTSTART;TZID=Europe/Prague:20241015T204500
-DTEND;TZID=Europe/Prague:20241015T220000
-DESCRIPTION:5.kolo\, hřiště: CESMI\n\nForejt FC: 11.\, 1b vs. Libeň SK
-  A: 12.\, 0b\n\nV areálu SK Čechie Smíchov\, více na www.cechiesmichov
- .cz . UMT 3. generace\, osvětlení . Obuv: povoleny kopačky turfy\, gumo
- textilní a sálové\, „lisovky“ zakázány !
-LOCATION:Smrčinská 3346/5\, Praha 5
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Medvědi B (7.) vs. Forejt FC (11.)\, Pražačka
