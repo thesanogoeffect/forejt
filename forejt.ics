@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
-SUMMARY:Forejt FC vs. Libeň SK A (8:4)\, Čechie Smíchov
+SUMMARY:Forejt FC vs. Libeň SK A (-)\, Čechie Smíchov
 DTSTART;TZID=Europe/Prague:20241015T204500
 DTEND;TZID=Europe/Prague:20241015T220000
 DESCRIPTION:5.kolo\, hřiště: CESMI\nV areálu SK Čechie Smíchov\, ví
@@ -64,11 +64,11 @@ DESCRIPTION:6.kolo\, hřiště: P1\n\nMedvědi B: 7.\, 4b vs. Forejt FC: 1
 LOCATION:Za Žižkovskou vozovnou 2716/19\, Praha 3
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (11.) vs. Tatran Válec (2.)\, Běchovice 2
+SUMMARY:Forejt FC (11.) vs. Tatran Válec (3.)\, Běchovice 2
 DTSTART;TZID=Europe/Prague:20241105T204500
 DTEND;TZID=Europe/Prague:20241105T220000
 DESCRIPTION:7.kolo\, hřiště: BECH\n\nForejt FC: 11.\, 1b vs. Tatran Vá
- lec: 2.\, 8b\n\nV areálu Sokola Běchovice\, více na www.sokolbechovice.
+ lec: 3.\, 8b\n\nV areálu Sokola Běchovice\, více na www.sokolbechovice.
  cz . UMT 3. generace\, osvětlení . Obuv: povoleny maximálně turfy\, gu
  motextilní kopačky a sálová obuv .  V "lisovkách" se hrát nesmí !
 LOCATION:Na Korunce 580\, Praha 9
@@ -88,11 +88,11 @@ DESCRIPTION:8.kolo\, hřiště: HRAB1\n\nNetopýr TFC: 9.\, 2b vs. Forejt
 LOCATION:Hrabákova 2001/21\, Praha 4
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (11.) vs. Modrá vopice TJ (4.)\, Pražačka
+SUMMARY:Forejt FC (11.) vs. Modrá vopice TJ (5.)\, Pražačka
 DTSTART;TZID=Europe/Prague:20241119T204500
 DTEND;TZID=Europe/Prague:20241119T220000
 DESCRIPTION:9.kolo\, hřiště: P3\n\nForejt FC: 11.\, 1b vs. Modrá vopic
- e TJ: 4.\, 6b\n\nVe „Sportovním a rekreačním areálu“ Pražačka\, 
+ e TJ: 5.\, 6b\n\nVe „Sportovním a rekreačním areálu“ Pražačka\, 
  více na www.prazacka.cz\, UMT 3. generace\, osvětlení . Hř. č.1 je ne
  jblíže kabinám\, č. 3 je nejvzdálenější. Obuv: kopačky povoleny i
   s lisovanými kolíky . Poznámka : Zápisy o utkání lze vhodit do schr
@@ -110,11 +110,11 @@ DESCRIPTION:10.kolo\, hřiště: CESMI\n\nBraník City: 1.\, 8b vs. Forejt
 LOCATION:Smrčinská 3346/5\, Praha 5
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (11.) vs. Cvrčci FC (3.)\, Koráb SC
+SUMMARY:Forejt FC (11.) vs. Cvrčci FC (4.)\, Koráb SC
 DTSTART;TZID=Europe/Prague:20241210T203000
 DTEND;TZID=Europe/Prague:20241210T214500
 DESCRIPTION:11.kolo\, hřiště: KORAB\n\nForejt FC: 11.\, 1b vs. Cvrčci 
- FC: 3.\, 7b\n\nV areálu SC Koráb\, více na www.sckorab.cz . UMT 3.gener
+ FC: 4.\, 7b\n\nV areálu SC Koráb\, více na www.sckorab.cz . UMT 3.gener
  ace\, osvětlení. Pokud by nebylo UO zapnuté\, musíte zajít a požáda
  t o zapnutí v restauraci . Obuv: povoleny maximálně turfy\, gumotextiln
  í kopačky a sálová obuv. V "lisovkách" se hrát nesmí ! Poznámka : 
