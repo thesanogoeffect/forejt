@@ -9,8 +9,8 @@ DTEND;TZID=Europe/Prague:20241022T220000
 DESCRIPTION:6.kolo\, hřiště: P1\nVe „Sportovním a rekreačním areá
  lu“ Pražačka\, více na www.prazacka.cz\, UMT 3. generace\, osvětlen
  í . Hř. č.1 je nejblíže kabinám\, č. 3 je nejvzdálenější. Obuv:
-  kopačky povoleny i s lisovanými kolíky . Poznámka : Zápisy o utkán
- í lze vhodit do schránky nalevo před vchodem do bistra Pražanda.
+  kopačky povoleny i s lisovanými kolíky. Poznámka : Zápisy o utkání
+  lze vhodit do schránky nalevo před vchodem do bistra Pražanda.
 LOCATION:Za Žižkovskou vozovnou 2716/19\, Praha 3
 END:VEVENT
 BEGIN:VEVENT
@@ -37,7 +37,7 @@ DTSTART;TZID=Europe/Prague:20240917T204500
 DTEND;TZID=Europe/Prague:20240917T220000
 DESCRIPTION:3.kolo\, hřiště: ARIT\nV areálu SK Aritma Praha\, více na
   www.skaritma.cz . UMT 3. generace\, osvětlení . Obuv: povoleny kopačky
-  turfy\, gumotextilní a sálové\, „lisovky“ zakázány!
+  turfy\, gumotextilní nebo sálové\, "lisovky“ zakázány!
 LOCATION:Nad Lávkou 672/5\, Praha 6
 END:VEVENT
 BEGIN:VEVENT
@@ -68,8 +68,8 @@ DTSTART;TZID=Europe/Prague:20241105T204500
 DTEND;TZID=Europe/Prague:20241105T220000
 DESCRIPTION:7.kolo\, hřiště: BECH\n\nForejt FC: 9.\, 3b vs. Tatran Vál
  ec: 3.\, 8b\n\nV areálu Sokola Běchovice\, více na www.sokolbechovice.c
- z . UMT 3. generace\, osvětlení . Obuv: povoleny maximálně turfy\, gum
- otextilní kopačky a sálová obuv .  V "lisovkách" se hrát nesmí !
+ z . UMT 3. generace\, osvětlení . Obuv: povoleny kopačky turfy\, gumote
+ xtilní nebo sálové\, . "lisovky" zakázány!
 LOCATION:Na Korunce 580\, Praha 9
 END:VEVENT
 BEGIN:VEVENT
@@ -94,8 +94,8 @@ DESCRIPTION:9.kolo\, hřiště: P3\n\nForejt FC: 9.\, 3b vs. Modrá vopice
   TJ: 7.\, 6b\n\nVe „Sportovním a rekreačním areálu“ Pražačka\, v
  íce na www.prazacka.cz\, UMT 3. generace\, osvětlení . Hř. č.1 je nej
  blíže kabinám\, č. 3 je nejvzdálenější. Obuv: kopačky povoleny i 
- s lisovanými kolíky . Poznámka : Zápisy o utkání lze vhodit do schr
- ánky nalevo před vchodem do bistra Pražanda.
+ s lisovanými kolíky. Poznámka : Zápisy o utkání lze vhodit do schrá
+ nky nalevo před vchodem do bistra Pražanda.
 LOCATION:Za Žižkovskou vozovnou 2716/19\, Praha 3
 END:VEVENT
 BEGIN:VEVENT
