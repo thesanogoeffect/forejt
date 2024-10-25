@@ -18,8 +18,8 @@ SUMMARY:Forejt FC vs. Libeň SK A (8:4)\, Čechie Smíchov
 DTSTART;TZID=Europe/Prague:20241015T204500
 DTEND;TZID=Europe/Prague:20241015T220000
 DESCRIPTION:5.kolo\, hřiště: CESMI\nV areálu SK Čechie Smíchov\, ví
- ce na www.cechiesmichov.cz . UMT 3. generace\, osvětlení . Obuv: povolen
- y kopačky turfy\, gumotextilní a sálové\, „lisovky“ zakázány !
+ ce na www.cechiesmichov.cz . UMT 3. generace\, osvětlení. Obuv: povoleny
+  kopačky turfy\, gumotextilní nebo sálové\, "lisovky“ zakázány!
 LOCATION:Smrčinská 3346/5\, Praha 5
 END:VEVENT
 BEGIN:VEVENT
@@ -36,8 +36,8 @@ SUMMARY:Forejt FC vs. Greenhorns FC (2:8)\, Aritma
 DTSTART;TZID=Europe/Prague:20240917T204500
 DTEND;TZID=Europe/Prague:20240917T220000
 DESCRIPTION:3.kolo\, hřiště: ARIT\nV areálu SK Aritma Praha\, více na
-  www.skaritma.cz . UMT 3. generace\, osvětlení . Obuv: povoleny kopačky
-  turfy\, gumotextilní nebo sálové\, "lisovky“ zakázány!
+  www.skaritma.cz . UMT 3. generace\, osvětlení. Obuv: povoleny kopačky 
+ turfy\, gumotextilní nebo sálové\, "lisovky“ zakázány!
 LOCATION:Nad Lávkou 672/5\, Praha 6
 END:VEVENT
 BEGIN:VEVENT
@@ -57,9 +57,9 @@ SUMMARY:Diablos Blancos C.F. vs. Forejt FC (6:1)\, Litvínovská
 DTSTART;TZID=Europe/Prague:20240903T204500
 DTEND;TZID=Europe/Prague:20240903T220000
 DESCRIPTION:1.kolo\, hřiště: LITVI\nV areálu Sportcentrum Prosek\, ví
- ce na www.sportcentrumprosek.cz . UMT 3. generace\, osvětlení . Obuv: po
- voleny kopačky turfy\, gumotextilní a sálové\, „lisovky“ zakázán
- y !
+ ce na www.sportcentrumprosek.cz . UMT 3. generace\, osvětlení. Obuv: pov
+ oleny kopačky turfy\, gumotextilní nebo sálové\, "lisovky“ zakázán
+ y!
 LOCATION:Litvínovská 500/5\, Praha 9
 END:VEVENT
 BEGIN:VEVENT
@@ -68,8 +68,8 @@ DTSTART;TZID=Europe/Prague:20241105T204500
 DTEND;TZID=Europe/Prague:20241105T220000
 DESCRIPTION:7.kolo\, hřiště: BECH\n\nForejt FC: 9.\, 3b vs. Tatran Vál
  ec: 3.\, 8b\n\nV areálu Sokola Běchovice\, více na www.sokolbechovice.c
- z . UMT 3. generace\, osvětlení . Obuv: povoleny kopačky turfy\, gumote
- xtilní nebo sálové\, . "lisovky" zakázány!
+ z . UMT 3. generace\, osvětlení. Obuv: povoleny kopačky turfy\, gumotex
+ tilní nebo sálové\, "lisovky" zakázány!
 LOCATION:Na Korunce 580\, Praha 9
 END:VEVENT
 BEGIN:VEVENT
@@ -78,12 +78,11 @@ DTSTART;TZID=Europe/Prague:20241112T180000
 DTEND;TZID=Europe/Prague:20241112T191500
 DESCRIPTION:8.kolo\, hřiště: HRAB1\n\nNetopýr TFC: 10.\, 2b vs. Forejt
   FC: 9.\, 3b\n\nVe Sportovním areálu Hrabákova\, více na www.jihomests
- ka.cz/sportovni-areal-hrabakova . UMT 3. generace\, osvětlení . Hř. č.
- 1 je při pohledu od restaurace zcela vpravo\, č. 3 naopak zcela vlevo. .
-  Obuv: povoleny kopačky turfy\, gumotextilní a sálové\, „lisovky“ 
- zakázány ! Poznámka : přísný zákaz vjezdu motorových vozidel úča
- stníků soutěží PSMF do areálu (nejsnazší parkování ve Westfield 
- Chodov) .
+ ka.cz/sportovni-areal-hrabakova . UMT 3. generace\, osvětlení. Obuv: pov
+ oleny kopačky turfy\, gumotextilní nebo sálové\, "lisovky“ zakázán
+ y! Hř. č.1 je při pohledu od restaurace první zprava\, č.3 první zle
+ va. Poznámka: přísný zákaz vjezdu motorových vozidel účastníků s
+ outěží PSMF do areálu (nejsnazší parkování ve Westfield Chodov).
 LOCATION:Hrabákova 2001/21\, Praha 4
 END:VEVENT
 BEGIN:VEVENT
@@ -104,8 +103,8 @@ DTSTART;TZID=Europe/Prague:20241126T204500
 DTEND;TZID=Europe/Prague:20241126T220000
 DESCRIPTION:10.kolo\, hřiště: CESMI\n\nBraník City: 1.\, 8b vs. Forejt
   FC: 9.\, 3b\n\nV areálu SK Čechie Smíchov\, více na www.cechiesmichov
- .cz . UMT 3. generace\, osvětlení . Obuv: povoleny kopačky turfy\, gumo
- textilní a sálové\, „lisovky“ zakázány !
+ .cz . UMT 3. generace\, osvětlení. Obuv: povoleny kopačky turfy\, gumot
+ extilní nebo sálové\, "lisovky“ zakázány!
 LOCATION:Smrčinská 3346/5\, Praha 5
 END:VEVENT
 BEGIN:VEVENT
@@ -115,10 +114,10 @@ DTEND;TZID=Europe/Prague:20241210T214500
 DESCRIPTION:11.kolo\, hřiště: KORAB\n\nForejt FC: 9.\, 3b vs. Cvrčci F
  C: 6.\, 7b\n\nV areálu SC Koráb\, více na www.sckorab.cz . UMT 3.genera
  ce\, osvětlení. Pokud by nebylo UO zapnuté\, musíte zajít a požádat
-  o zapnutí v restauraci . Obuv: povoleny maximálně turfy\, gumotextiln
- í kopačky a sálová obuv. V "lisovkách" se hrát nesmí ! Poznámka : 
- kabiny se sprchami jsou za prvním parkovištěm v 1.patře. Skříňky lz
- e použít po zadání čtyřmístného kódu (PINu) .
+  o zapnutí do restaurace. Obuv: povoleny kopačky turfy\, gumotextilní n
+ ebo sálové\, "lisovky" zakázány! Poznámka: kabiny se sprchami jsou za
+  prvním parkovištěm v 1.patře. Skříňky lze použít po zadání čt
+ yřmístného kódu (PINu).
 LOCATION:Krejčího 2261/2a\, Praha 8
 END:VEVENT
 END:VCALENDAR
