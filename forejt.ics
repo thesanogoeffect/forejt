@@ -3,6 +3,15 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Forejt FC vs. Tatran Válec (nan)\, Běchovice 2
+DTSTART;TZID=Europe/Prague:20241105T204500
+DTEND;TZID=Europe/Prague:20241105T220000
+DESCRIPTION:7.kolo\, hřiště: BECH\nV areálu Sokola Běchovice\, více 
+ na www.sokolbechovice.cz . UMT 3. generace\, osvětlení. Obuv: povoleny k
+ opačky turfy\, gumotextilní nebo sálové\, "lisovky" zakázány!
+LOCATION:Na Korunce 580\, Praha 9
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Medvědi B vs. Forejt FC (9:3)\, Pražačka
 DTSTART;TZID=Europe/Prague:20241022T204500
 DTEND;TZID=Europe/Prague:20241022T220000
@@ -61,16 +70,6 @@ DESCRIPTION:1.kolo\, hřiště: LITVI\nV areálu Sportcentrum Prosek\, ví
  oleny kopačky turfy\, gumotextilní nebo sálové\, "lisovky“ zakázán
  y!
 LOCATION:Litvínovská 500/5\, Praha 9
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Forejt FC (9.) vs. Tatran Válec (5.)\, Běchovice 2
-DTSTART;TZID=Europe/Prague:20241105T204500
-DTEND;TZID=Europe/Prague:20241105T220000
-DESCRIPTION:7.kolo\, hřiště: BECH\n\nForejt FC: 9.\, 3b vs. Tatran Vál
- ec: 5.\, 8b\n\nV areálu Sokola Běchovice\, více na www.sokolbechovice.c
- z . UMT 3. generace\, osvětlení. Obuv: povoleny kopačky turfy\, gumotex
- tilní nebo sálové\, "lisovky" zakázány!
-LOCATION:Na Korunce 580\, Praha 9
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Netopýr TFC (10.) vs. Forejt FC (9.)\, Hrabákova
