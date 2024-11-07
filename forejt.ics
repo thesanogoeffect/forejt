@@ -97,26 +97,26 @@ DESCRIPTION:9.kolo\, hřiště: P3\n\nForejt FC: 10.\, 3b vs. Modrá vopic
 LOCATION:Za Žižkovskou vozovnou 2716/19\, Praha 3
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Braník City (1.) vs. Forejt FC (10.)\, Čechie Smíchov
+SUMMARY:Braník City (3.) vs. Forejt FC (10.)\, Čechie Smíchov
 DTSTART;TZID=Europe/Prague:20241126T204500
 DTEND;TZID=Europe/Prague:20241126T220000
-DESCRIPTION:10.kolo\, hřiště: CESMI\n\nBraník City: 1.\, 10b vs. Forej
+DESCRIPTION:10.kolo\, hřiště: CESMI\n\nBraník City: 3.\, 10b vs. Forej
  t FC: 10.\, 3b\n\nV areálu SK Čechie Smíchov\, více na www.cechiesmich
  ov.cz . UMT 3. generace\, osvětlení. Obuv: povoleny kopačky turfy\, gum
  otextilní nebo sálové\, "lisovky“ zakázány!
 LOCATION:Smrčinská 3346/5\, Praha 5
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Forejt FC (10.) vs. Cvrčci FC (4.)\, Koráb SC
+SUMMARY:Forejt FC (10.) vs. Cvrčci FC (2.)\, Koráb SC
 DTSTART;TZID=Europe/Prague:20241210T203000
 DTEND;TZID=Europe/Prague:20241210T214500
 DESCRIPTION:11.kolo\, hřiště: KORAB\n\nForejt FC: 10.\, 3b vs. Cvrčci 
- FC: 4.\, 9b\n\nV areálu SC Koráb\, více na www.sckorab.cz . UMT 3.gener
- ace\, osvětlení. Pokud by nebylo UO zapnuté\, musíte zajít a požáda
- t o zapnutí do restaurace. Obuv: povoleny kopačky turfy\, gumotextilní 
- nebo sálové\, "lisovky" zakázány! Poznámka: kabiny se sprchami jsou z
- a prvním parkovištěm v 1.patře. Skříňky lze použít po zadání č
- tyřmístného kódu (PINu).
+ FC: 2.\, 11b\n\nV areálu SC Koráb\, více na www.sckorab.cz . UMT 3.gene
+ race\, osvětlení. Pokud by nebylo UO zapnuté\, musíte zajít a požád
+ at o zapnutí do restaurace. Obuv: povoleny kopačky turfy\, gumotextilní
+  nebo sálové\, "lisovky" zakázány! Poznámka: kabiny se sprchami jsou 
+ za prvním parkovištěm v 1.patře. Skříňky lze použít po zadání 
+ čtyřmístného kódu (PINu).
 LOCATION:Krejčího 2261/2a\, Praha 8
 END:VEVENT
 END:VCALENDAR
