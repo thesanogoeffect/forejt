@@ -3,6 +3,19 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Netopýr TFC vs. Forejt FC (1:2)\, Hrabákova
+DTSTART;TZID=Europe/Prague:20241112T180000
+DTEND;TZID=Europe/Prague:20241112T191500
+DESCRIPTION:8.kolo\, hřiště: HRAB1\nVe Sportovním areálu Hrabákova\,
+  více na www.jihomestska.cz/sportovni-areal-hrabakova . UMT 3. generace\,
+  osvětlení. Obuv: povoleny kopačky turfy\, gumotextilní nebo sálové\
+ , "lisovky“ zakázány! Hř. č.1 je při pohledu od restaurace první z
+ prava\, č.3 první zleva. Poznámka: přísný zákaz vjezdu motorových 
+ vozidel účastníků soutěží PSMF do areálu (nejsnazší parkování 
+ ve Westfield Chodov).
+LOCATION:Hrabákova 2001/21\, Praha 4
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Forejt FC vs. Tatran Válec (3:4)\, Běchovice 2
 DTSTART;TZID=Europe/Prague:20241105T204500
 DTEND;TZID=Europe/Prague:20241105T220000
@@ -70,19 +83,6 @@ DESCRIPTION:1.kolo\, hřiště: LITVI\nV areálu Sportcentrum Prosek\, ví
  oleny kopačky turfy\, gumotextilní nebo sálové\, "lisovky“ zakázán
  y!
 LOCATION:Litvínovská 500/5\, Praha 9
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Netopýr TFC (10.) vs. Forejt FC (11.)\, Hrabákova
-DTSTART;TZID=Europe/Prague:20241112T180000
-DTEND;TZID=Europe/Prague:20241112T191500
-DESCRIPTION:8.kolo\, hřiště: HRAB1\n\nNetopýr TFC: 10.\, 3b vs. Forejt
-  FC: 11.\, 3b\n\nVe Sportovním areálu Hrabákova\, více na www.jihomest
- ska.cz/sportovni-areal-hrabakova . UMT 3. generace\, osvětlení. Obuv: po
- voleny kopačky turfy\, gumotextilní nebo sálové\, "lisovky“ zakázá
- ny! Hř. č.1 je při pohledu od restaurace první zprava\, č.3 první zl
- eva. Poznámka: přísný zákaz vjezdu motorových vozidel účastníků 
- soutěží PSMF do areálu (nejsnazší parkování ve Westfield Chodov).
-LOCATION:Hrabákova 2001/21\, Praha 4
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Forejt FC (11.) vs. Modrá vopice TJ (7.)\, Pražačka
