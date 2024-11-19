@@ -3,6 +3,17 @@ VERSION:2.0
 PRODID:-//Forejt//FC Forejt//CZ
 X-WR-CALNAME:FC Forejt
 BEGIN:VEVENT
+SUMMARY:Forejt FC vs. Modrá vopice TJ (nan)\, Pražačka
+DTSTART;TZID=Europe/Prague:20241119T204500
+DTEND;TZID=Europe/Prague:20241119T220000
+DESCRIPTION:9.kolo\, hřiště: P3\nVe „Sportovním a rekreačním areá
+ lu“ Pražačka\, více na www.prazacka.cz\, UMT 3. generace\, osvětlen
+ í . Hř. č.1 je nejblíže kabinám\, č. 3 je nejvzdálenější. Obuv:
+  kopačky povoleny i s lisovanými kolíky. Poznámka : Zápisy o utkání
+  lze vhodit do schránky nalevo před vchodem do bistra Pražanda.
+LOCATION:Za Žižkovskou vozovnou 2716/19\, Praha 3
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Netopýr TFC vs. Forejt FC (1:2)\, Hrabákova
 DTSTART;TZID=Europe/Prague:20241112T180000
 DTEND;TZID=Europe/Prague:20241112T191500
@@ -83,18 +94,6 @@ DESCRIPTION:1.kolo\, hřiště: LITVI\nV areálu Sportcentrum Prosek\, ví
  oleny kopačky turfy\, gumotextilní nebo sálové\, "lisovky“ zakázán
  y!
 LOCATION:Litvínovská 500/5\, Praha 9
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Forejt FC (9.) vs. Modrá vopice TJ (6.)\, Pražačka
-DTSTART;TZID=Europe/Prague:20241119T204500
-DTEND;TZID=Europe/Prague:20241119T220000
-DESCRIPTION:9.kolo\, hřiště: P3\n\nForejt FC: 9.\, 5b vs. Modrá vopice
-  TJ: 6.\, 8b\n\nVe „Sportovním a rekreačním areálu“ Pražačka\, v
- íce na www.prazacka.cz\, UMT 3. generace\, osvětlení . Hř. č.1 je nej
- blíže kabinám\, č. 3 je nejvzdálenější. Obuv: kopačky povoleny i 
- s lisovanými kolíky. Poznámka : Zápisy o utkání lze vhodit do schrá
- nky nalevo před vchodem do bistra Pražanda.
-LOCATION:Za Žižkovskou vozovnou 2716/19\, Praha 3
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Braník City (2.) vs. Forejt FC (9.)\, Čechie Smíchov
