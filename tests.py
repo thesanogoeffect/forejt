@@ -4,7 +4,7 @@ import logging
 import datetime
 
 # if it's before 18th of March 2024, it's preseason
-PRESEASON = datetime.datetime.now() < datetime.datetime(2024, 3, 21)
+PRESEASON = datetime.datetime.now() < datetime.datetime(2025, 3, 21)
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
