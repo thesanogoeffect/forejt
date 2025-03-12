@@ -46,7 +46,7 @@ jobs:
           path: './gh-pages'
 
       - name: Download forejt.ics from artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: forejt-ics
           path: ./artifacts/
