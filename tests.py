@@ -4,7 +4,7 @@ import logging
 import datetime
 
 # if it's before 18th of March 2024, it's preseason
-PRESEASON = datetime.datetime.now() < datetime.datetime(2024, 9, 5)
+PRESEASON = datetime.datetime.now() < datetime.datetime(2024, 3, 21)
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -25,7 +25,7 @@ def get_team_position_points(scoreboard_df, team_name):
 def all_dfs():
     try:
         dfs = pd.read_html(
-            "https://www.psmf.cz/souteze/2024-hanspaulska-liga-podzim/7-c/tymy/forejt-fc/"
+            "https://www.psmf.cz/souteze/2025-hanspaulska-liga-jaro/7-b/tymy/forejt-fc/"
         )
         return dfs
     except Exception as e:
