@@ -34,7 +34,7 @@ jobs:
           ls -la .
       
       - name: Upload forejt.ics as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: forejt-ics
           path: ./forejt.ics
