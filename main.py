@@ -8,7 +8,6 @@ PRESEASON = datetime.now() < datetime(2025, 9, 2)
 tz = timezone("Europe/Prague")
 email_list = set()
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
-
 def create_past_events(cal, results_df):
     for match in results_df.itertuples(index=True, name='Match'):
         event = Event()
