@@ -36,12 +36,15 @@ def all_dfs():
 def pitches_df():
     try:
         pitches_df = pd.read_html("https://www.psmf.cz/hriste/")[0]
+        logging.info(f"Found {len(pitches_df)} pitches")
+        logging.info(f"pitches_df columns: {pitches_df.columns}")
+        logging.info(f"pitches_df head: {pitches_df.head()}")
         pitches_df["Zkratka hřiště base"] = pitches_df["Zkratka hřiště"].str.extract(
-            "(^[A-Z]+)", expand=True
+            "(^[A-Z]+)", expand=False
         )
         pitches_df["Pure adresa"] = pitches_df[
             "Adresa areálů (hřišť) a další informace"
-        ].str.extract("(.+Praha \d+)", expand=True)
+        ].str.extract("(.+Praha \d+)", expand=False)
         pitches_df["Desc"] = pitches_df[
             "Adresa areálů (hřišť) a další informace"
         ].str.replace("(.+Praha \d+)", "", regex=True)
