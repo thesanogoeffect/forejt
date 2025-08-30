@@ -36,17 +36,14 @@ def all_dfs():
 def pitches_df():
     try:
         pitches_df = pd.read_html("https://www.psmf.cz/hriste/")[0]
-        logging.info(f"Found {len(pitches_df)} pitches")
-        logging.info(f"pitches_df columns: {pitches_df.columns}")
-        logging.info(f"pitches_df head: {pitches_df.head()}")
         pitches_df["Zkratka hřiště base"] = pitches_df["Zkratka hřiště"].str.extract(
-            "(^[A-Z]+)", expand=False
+            "(^[A-Z]+)", expand=True
         )
         pitches_df["Pure adresa"] = pitches_df[
-            "Adresa areálů (hřišť) a další informace"
-        ].str.extract("(.+Praha \d+)", expand=False)
+            "Adresa areálů (hřišť) a\xa0další informace"
+        ].str.extract("(.+Praha \d+)", expand=True)
         pitches_df["Desc"] = pitches_df[
-            "Adresa areálů (hřišť) a další informace"
+            "Adresa areálů (hřišť) a\xa0další informace"
         ].str.replace("(.+Praha \d+)", "", regex=True)
         return pitches_df
     except Exception as e:
@@ -69,7 +66,7 @@ def matches_df(all_dfs, pitches_df):
     matches_df = matches_df.merge(pitches_df, how="left", on="Zkratka hřiště base")
     matches_df = matches_df.drop(
         [
-            "Adresa areálů (hřišť) a další informace",
+            "Adresa areálů (hřišť) a\xa0další informace",
             "Zkratka hřiště",
             "Zkratka hřiště base",
         ],
@@ -102,7 +99,7 @@ def results_df(all_dfs, pitches_df):
     results_df = results_df.merge(pitches_df, how="left", on="Zkratka hřiště base")
     results_df = results_df.drop(
         [
-            "Adresa areálů (hřišť) a další informace",
+            "Adresa areálů (hřišť) a\xa0další informace",
             "Zkratka hřiště",
             "Zkratka hřiště base",
         ],
@@ -134,7 +131,7 @@ def test_pitches_df(pitches_df):
         for x in [
             "Název hřiště",
             "Zkratka hřiště",
-            "Adresa areálů (hřišť) a další informace",
+            "Adresa areálů (hřišť) a\xa0další informace",
             "Zkratka hřiště base",
             "Pure adresa",
             "Desc",

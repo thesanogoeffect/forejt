@@ -51,8 +51,8 @@ if __name__ == "__main__":
         logging.error(f"An error occurred while reading pitches, is PSMF down?: {e}")
         
     pitches_df["Zkratka hřiště base"] = pitches_df["Zkratka hřiště"].str.extract('(^[A-Z]+)', expand=True)
-    pitches_df["Pure adresa"] = pitches_df["Adresa areálů (hřišť) a další informace"].str.extract('(.+Praha \d+)', expand=True)
-    pitches_df["Desc"] = pitches_df["Adresa areálů (hřišť) a další informace"].str.replace('(.+Praha \d+)', "", regex=True)
+    pitches_df["Pure adresa"] = pitches_df["Adresa areálů (hřišť) a\xa0další informace"].str.extract('(.+Praha \d+)', expand=True)
+    pitches_df["Desc"] = pitches_df["Adresa areálů (hřišť) a\xa0další informace"].str.replace('(.+Praha \d+)', "", regex=True)
 
     logging.info("Successfully read pitches")
     logging.info(f"Found {len(pitches_df)} pitches")
@@ -68,7 +68,7 @@ if __name__ == "__main__":
     matches_df["Domácí - Hosté"] = matches_df["Domácí - Hosté"].str.replace("  ", " vs. ")
     matches_df["Zkratka hřiště base"] = matches_df["Hřiště"].str.extract('(^[A-Z]+)', expand=True)
     matches_df = matches_df.merge(pitches_df, how='left', on='Zkratka hřiště base')
-    matches_df = matches_df.drop(["Adresa areálů (hřišť) a další informace", "Zkratka hřiště", "Zkratka hřiště base"], axis=1)
+    matches_df = matches_df.drop(["Adresa areálů (hřišť) a\xa0další informace", "Zkratka hřiště", "Zkratka hřiště base"], axis=1)
     matches_df["Datum"] = matches_df["Datum"].str.replace("[A-Za-zÚČá]+", "", regex=True).str.replace('\xa0', '')
     matches_df["Kolo"] = matches_df["Kolo"].astype(int)
     matches_df = matches_df.set_index("Domácí - Hosté")
@@ -82,7 +82,7 @@ if __name__ == "__main__":
         results_df["Domácí - Hosté"] = results_df["Domácí - Hosté"].str.replace("  ", " vs. ")
         results_df["Zkratka hřiště base"] = results_df["Hřiště"].str.extract('(^[A-Z]+)', expand=True)
         results_df = results_df.merge(pitches_df, how='left', on='Zkratka hřiště base')
-        results_df = results_df.drop(["Adresa areálů (hřišť) a další informace", "Zkratka hřiště", "Zkratka hřiště base"], axis=1)
+        results_df = results_df.drop(["Adresa areálů (hřišť) a\xa0další informace", "Zkratka hřiště", "Zkratka hřiště base"], axis=1)
         results_df["Datum"] = results_df["Datum"].str.replace("[A-Za-zÚČá]+", "", regex=True).str.replace('\xa0', '')
         results_df["Kolo"] = results_df["Kolo"].astype(int)
         results_df = results_df.set_index("Domácí - Hosté")
