@@ -3,3 +3,4 @@ icalendar
 pytz
 lxml
 pytest
+pyarrow
