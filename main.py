@@ -4,7 +4,7 @@ from pytz import timezone
 from icalendar import Calendar, Event
 import logging
 
-PRESEASON = datetime.now() < datetime(2025, 3, 21)
+PRESEASON = datetime.now() < datetime(2025, 9, 2)
 tz = timezone("Europe/Prague")
 email_list = set()
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     logging.info(f"pitches_df shape: {pitches_df.shape}")
     logging.info("Fetching matches and results...")
 
-    matches_dfs = pd.read_html("https://www.psmf.cz/souteze/2025-hanspaulska-liga-jaro/7-b/tymy/forejt-fc/")
+    matches_dfs = pd.read_html("https://www.psmf.cz/souteze/2025-hanspaulska-liga-podzim/6-b/tymy/forejt-fc/")
 
     logging.info("Successfully read matches and results")
     matches_df = matches_dfs[3] if not PRESEASON else matches_dfs[1]
