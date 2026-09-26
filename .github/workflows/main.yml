@@ -1,7 +1,8 @@
 name: Update Calendar Job
 on:
-  # schedule:
-  #   - cron: "2 21 * * *" # run daily, uncomment when you want to run the job
+  schedule:
+    - cron: "2 21 * * *" # daily at 21:02 UTC (23:02 Prague)
+  workflow_dispatch: # allow manual runs
   push:
     # branches:
     #   - main # change to main when you want to run the job
@@ -72,7 +73,7 @@ jobs:
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
           git add forejt.ics
-          git commit -m "Update Calendar ICS file"
+          git commit -m "Update Calendar ICS file" || echo "No changes to commit"
           git push origin gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -4,3 +4,4 @@ pytz
 lxml
 pytest
 pyarrow
+requests
