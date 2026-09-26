@@ -33,6 +33,9 @@ jobs:
         run: pytest ./forejt/tests.py
 
       - name: Run script
+        # A PSMF outage fails this step on purpose: the previously deployed
+        # ICS stays in place on gh-pages, the red run is visible in CI, and
+        # the watchdog cron (forejt-calendar-watchdog) pings about it.
         run: python ./forejt/main.py
 
       - name: Save cached team URL
