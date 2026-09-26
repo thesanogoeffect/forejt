@@ -32,17 +32,23 @@ _session = requests.Session()
 _session.headers["User-Agent"] = "Mozilla/5.0 (forejt-ics-bot)"
 
 
-def get(url):
-    """GET with retry, since PSMF is flaky (intermittent timeouts / 5xx)."""
+def get(url, timeout=None, max_retries=None):
+    """GET with retry, since PSMF is flaky (intermittent timeouts / 5xx).
+
+    timeout/max_retries are overridable so tests can fail fast (e.g.
+    FOREJT_MAX_RETRIES=1) while production keeps its full retry budget.
+    """
+    timeout = timeout or int(os.environ.get("FOREJT_TIMEOUT", "30"))
+    max_retries = max_retries or int(os.environ.get("FOREJT_MAX_RETRIES", "4"))
     last_err = None
-    for attempt in range(4):
+    for attempt in range(max_retries):
         try:
-            r = _session.get(url, timeout=30)
+            r = _session.get(url, timeout=timeout)
             r.raise_for_status()
             return r
         except requests.RequestException as e:
             last_err = e
-            logging.warning(f"GET {url} failed (attempt {attempt + 1}/4): {e}")
+            logging.warning(f"GET {url} failed (attempt {attempt + 1}/{max_retries}): {e}")
             time.sleep(5 * (attempt + 1))
     if last_err is None:
         raise RuntimeError("GET failed without an error (unexpected)")

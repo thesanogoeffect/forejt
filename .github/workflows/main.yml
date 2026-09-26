@@ -30,7 +30,13 @@ jobs:
         working-directory: ./
 
       - name: Run Tests
+        # Fail fast when PSMF is down: the live smoke test skips in seconds
+        # instead of burning the full retry budget; the deterministic tests
+        # are what catch real regressions.
         run: pytest ./forejt/tests.py
+        env:
+          FOREJT_MAX_RETRIES: "1"
+          FOREJT_TIMEOUT: "8"
 
       - name: Run script
         # A PSMF outage fails this step on purpose: the previously deployed
