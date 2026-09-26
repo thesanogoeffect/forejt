@@ -1,6 +1,13 @@
 """Tests for the PSMF scraping pipeline.
 
-Uses main.py's helpers so tests exercise the same code as production.
+Two layers:
+
+* **Deterministic (always run):** the parser/transform functions are exercised
+  against in-memory DataFrames that mirror the real PSMF column layout. These
+  never touch the network, so a flaky PSMF outage cannot fail the build.
+* **Live smoke (best effort):** one test reaches PSMF to confirm the team page
+  still resolves and parses. It is *skipped* (not failed) when PSMF is
+  unreachable, so a transient outage degrades to a skip instead of a red build.
 """
 import logging
 
@@ -15,139 +22,167 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S",
 )
 
-
-@pytest.fixture(scope="module")
-def team_url():
-    return main.find_team_url()
+# PSMF's address column uses a non-breaking space (U+00A0) before "další".
+ADDR_COL = "Adresa areálů (hřišť) a\xa0další informace"
 
 
-@pytest.fixture(scope="module")
-def all_dfs(team_url):
-    try:
-        return pd.read_html(team_url)
-    except Exception as e:
-        pytest.fail(f"Failed to fetch DataFrames from {team_url}: {e}")
+# --------------------------------------------------------------------------- #
+# Fixture DataFrames mirroring the real PSMF table layout
+# --------------------------------------------------------------------------- #
+def _pitches_df():
+    """The /hriste/ pitches table, prepped the way main.py preps it."""
+    df = pd.DataFrame(
+        {
+            "Název hřiště": ["Malešovice", "Strašnice"],
+            "Zkratka hřiště": ["MALES", "STRAS"],
+            ADDR_COL: [
+                "Malešovice, Praha 14  \nU areálu, vlevo",
+                "Strašnice, Praha 7  \nSportovní hřiště",
+            ],
+        }
+    )
+    df["Zkratka hřiště base"] = df["Zkratka hřiště"].str.extract(r"(^[A-Z]+)", expand=True)
+    df["Pure adresa"] = df[ADDR_COL].str.extract(r"(.+Praha \d+)", expand=True)
+    df["Desc"] = df[ADDR_COL].str.replace(r"(.+Praha \d+)", "", regex=True)
+    return df
+
+
+def _upcoming_df():
+    """Team-page 'Nadcházející zápasy' table (no Výsledek yet)."""
+    return pd.DataFrame(
+        {
+            "Domácí - Hosté": [
+                "Forejt FC  Catchers SC",
+                "MALES  Forejt FC",
+            ],
+            "Datum": ["Út 29.09.", "So 03.10."],
+            "Čas": ["18:00", "17:00"],
+            "Hřiště": ["MALES", "STRAS"],
+            "Kolo": [5.0, 6.0],
+        }
+    )
+
+
+def _results_df():
+    """Team-page 'Výsledky' table (has Výsledek)."""
+    return pd.DataFrame(
+        {
+            "Domácí - Hosté": [
+                "Forejt FC  MALES FC",
+                "Catchers SC  Forejt FC",
+            ],
+            "Datum": ["So 05.09.", "So 12.09."],
+            "Čas": ["16:00", "18:00"],
+            "Hřiště": ["MALES", "STRAS"],
+            "Kolo": [3.0, 4.0],
+            "Výsledek": ["3:1", "2:5"],
+        }
+    )
+
+
+def _scoreboard_df():
+    """Team-page league table, as read_html returns it (Tým is a column)."""
+    return pd.DataFrame(
+        {
+            "Tým": ["Forejt FC", "Catchers SC", "MALES FC"],
+            "Pořadí": [1.0, 2.0, 3.0],
+            "Odehrané zápasy": [4.0, 4.0, 4.0],
+            "Počet výher": [3.0, 1.0, 0.0],
+            "Počet remíz": [0.0, 1.0, 0.0],
+            "Počet proher": [1.0, 2.0, 4.0],
+            "Skóre": ["12:6", "8:9", "4:15"],
+            "Počet bodů": [9.0, 4.0, 0.0],
+        }
+    )
 
 
 @pytest.fixture(scope="module")
 def pitches_df():
-    try:
-        pitches_df = pd.read_html(f"{main.BASE_URL}/hriste/")[0]
-        pitches_df["Zkratka hřiště base"] = pitches_df["Zkratka hřiště"].str.extract(
-            "(^[A-Z]+)", expand=True
-        )
-        pitches_df["Pure adresa"] = pitches_df[
-            "Adresa areálů (hřišť) a\xa0další informace"
-        ].str.extract("(.+Praha \d+)", expand=True)
-        pitches_df["Desc"] = pitches_df[
-            "Adresa areálů (hřišť) a\xa0další informace"
-        ].str.replace("(.+Praha \d+)", "", regex=True)
-        return pitches_df
-    except Exception as e:
-        pytest.fail(f"Failed to fetch pitches DataFrame: {e}")
+    return _pitches_df()
 
 
 @pytest.fixture(scope="module")
-def matches_df(all_dfs, pitches_df):
-    results_df, matches_df, scoreboard_df = main.normalize_team_page_dfs(all_dfs)
-    matches_df = main.prepare_match_df(matches_df, pitches_df)
-    logging.info(f"Found {len(matches_df)} upcoming matches")
-    logging.info(f"matches_df columns: {matches_df.columns}")
-    logging.info(f"matches_df head:\n{matches_df.head()}")
-    return matches_df
+def team_page_dfs():
+    """A list of DataFrames as pd.read_html(team_url) would return."""
+    return [_results_df(), _upcoming_df(), _scoreboard_df()]
 
 
 @pytest.fixture(scope="module")
-def results_df(all_dfs, pitches_df):
-    results_df, _, _ = main.normalize_team_page_dfs(all_dfs)
-    if results_df is None:
-        logging.info("No results yet this season (preseason)")
+def scoreboard_df(team_page_dfs):
+    _, _, sb = main.normalize_team_page_dfs(team_page_dfs)
+    sb.set_index("Tým", inplace=True)
+    return sb
+
+
+@pytest.fixture(scope="module")
+def matches_df(team_page_dfs, pitches_df):
+    _, upcoming, _ = main.normalize_team_page_dfs(team_page_dfs)
+    return main.prepare_match_df(upcoming, pitches_df)
+
+
+@pytest.fixture(scope="module")
+def results_df(team_page_dfs, pitches_df):
+    results, _, _ = main.normalize_team_page_dfs(team_page_dfs)
+    if results is None:
         return None
-    results_df = main.prepare_match_df(results_df, pitches_df)
-    logging.info(f"Found {len(results_df)} results")
-    logging.info(f"results_df columns: {results_df.columns}")
-    logging.info(f"results_df head:\n{results_df.head()}")
-    return results_df
+    return main.prepare_match_df(results, pitches_df)
 
 
-@pytest.fixture(scope="module")
-def scoreboard_df(all_dfs):
-    _, _, scoreboard_df = main.normalize_team_page_dfs(all_dfs)
-    logging.info(f"scoreboard_df columns: {scoreboard_df.columns}")
-    logging.info(f"scoreboard_df head:\n{scoreboard_df.head()}")
-    scoreboard_df.set_index("Tým", inplace=True)
-    return scoreboard_df
-
-
-def test_team_page_is_forejt(team_url):
-    assert main.TEAM_SLUG in team_url
-
-
+# --------------------------------------------------------------------------- #
+# Deterministic parser / transform tests
+# --------------------------------------------------------------------------- #
 def test_pitches_df(pitches_df):
     assert len(pitches_df) > 0
     assert all(
-        x in pitches_df.columns
-        for x in [
-            "Název hřiště",
-            "Zkratka hřiště",
-            "Adresa areálů (hřišť) a\xa0další informace",
-            "Zkratka hřiště base",
-            "Pure adresa",
-            "Desc",
-        ]
+        c in pitches_df.columns
+        for c in ["Název hřiště", "Zkratka hřiště", ADDR_COL,
+                  "Zkratka hřiště base", "Pure adresa", "Desc"]
     )
     assert pitches_df.shape[1] == 6
+
+
+def test_normalize_finds_all_tables(team_page_dfs):
+    results, upcoming, scoreboard = main.normalize_team_page_dfs(team_page_dfs)
+    assert results is not None and "Výsledek" in results.columns
+    assert upcoming is not None and "Výsledek" not in upcoming.columns
+    assert scoreboard is not None and "Tým" in scoreboard.columns
+
+
+def test_normalize_requires_upcoming_and_scoreboard():
+    # A page missing the upcoming table must raise, not silently pass.
+    only_scoreboard = [_scoreboard_df()]
+    with pytest.raises(RuntimeError):
+        main.normalize_team_page_dfs(only_scoreboard)
 
 
 def test_matches_df(matches_df):
     assert len(matches_df) > 0
     assert all(
-        x in matches_df.columns
-        for x in [
-            "Datum",
-            "Čas",
-            "Hřiště",
-            "Kolo",
-            "Název hřiště",
-            "Pure adresa",
-            "Desc",
-        ]
+        c in matches_df.columns
+        for c in ["Datum", "Čas", "Hřiště", "Kolo",
+                  "Název hřiště", "Pure adresa", "Desc"]
     )
+    # Kolo must be a clean int even if the source was a float.
+    assert matches_df["Kolo"].dtype.kind == "i"
 
 
 def test_results_df(results_df):
     if results_df is None:
-        logging.info("Skipping results_df test because there are no results yet")
+        logging.info("Skipping: no results yet this season (preseason)")
         return
     assert all(
-        x in results_df.columns
-        for x in [
-            "Datum",
-            "Čas",
-            "Hřiště",
-            "Kolo",
-            "Výsledek",
-            "Název hřiště",
-            "Pure adresa",
-            "Desc",
-        ]
+        c in results_df.columns
+        for c in ["Datum", "Čas", "Hřiště", "Kolo", "Výsledek",
+                  "Název hřiště", "Pure adresa", "Desc"]
     )
 
 
 def test_scoreboard_df(scoreboard_df):
-    # Tým	Odehrané zápasy	Počet výher	Počet remíz	Počet proher	Skóre	Počet bodů
     assert len(scoreboard_df) > 0
     assert all(
-        x in scoreboard_df.columns
-        for x in [
-            "Pořadí",
-            "Odehrané zápasy",
-            "Počet výher",
-            "Počet remíz",
-            "Počet proher",
-            "Skóre",
-            "Počet bodů",
-        ]
+        c in scoreboard_df.columns
+        for c in ["Pořadí", "Odehrané zápasy", "Počet výher", "Počet remíz",
+                  "Počet proher", "Skóre", "Počet bodů"]
     )
 
 
@@ -159,3 +194,34 @@ def test_get_team_position_points(scoreboard_df):
     pos, points = main.get_team_position_points(scoreboard_df, main.TEAM_NAME)
     assert isinstance(pos, int)
     assert isinstance(points, int)
+
+
+# --------------------------------------------------------------------------- #
+# Live smoke test (skipped when PSMF is unreachable)
+# --------------------------------------------------------------------------- #
+def _psmf_reachable(timeout=10):
+    """Fast, single-shot probe (no retry layer) so a down PSMF skips in
+    ~seconds instead of burning the full retry budget."""
+    import requests
+
+    try:
+        r = requests.get(main.BASE_URL, timeout=timeout,
+                         headers={"User-Agent": "forejt-ics-smoketest"})
+        return r.status_code == 200
+    except requests.RequestException:
+        return False
+
+
+def test_live_smoke():
+    """Reach PSMF, resolve the team page, and confirm Forejt FC is in it.
+
+    Skips (does not fail) when PSMF is down, so a transient outage never
+    breaks the build.
+    """
+    if not _psmf_reachable():
+        pytest.skip("PSMF unreachable from this environment — skipping live smoke test")
+    team_url = main.find_team_url()
+    assert main.TEAM_SLUG in team_url
+    dfs = pd.read_html(team_url)
+    _, _, scoreboard = main.normalize_team_page_dfs(dfs)
+    assert main.TEAM_NAME in scoreboard.index

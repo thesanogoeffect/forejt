@@ -16,6 +16,12 @@ jobs:
           ref: "main"
           path: "./forejt"
 
+      - name: Restore cached team URL
+        uses: actions/cache/restore@v4
+        with:
+          path: ./forejt/team_url.json
+          key: forejt-team-url
+
       - name: Setup Python
         uses: actions/setup-python@v4
 
@@ -28,6 +34,13 @@ jobs:
 
       - name: Run script
         run: python ./forejt/main.py
+
+      - name: Save cached team URL
+        if: success()
+        uses: actions/cache/save@v4
+        with:
+          path: ./forejt/team_url.json
+          key: forejt-team-url
 
       - name: Debug List Files
         run: |

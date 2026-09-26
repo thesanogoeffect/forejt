@@ -236,9 +236,9 @@ if __name__ == "__main__":
     except Exception as e:
         logging.error(f"An error occurred while reading pitches, is PSMF down?: {e}")
         raise
-    pitches_df["Zkratka hřiště base"] = pitches_df["Zkratka hřiště"].str.extract('(^[A-Z]+)', expand=True)
-    pitches_df["Pure adresa"] = pitches_df["Adresa areálů (hřišť) a\xa0další informace"].str.extract('(.+Praha \d+)', expand=True)
-    pitches_df["Desc"] = pitches_df["Adresa areálů (hřišť) a\xa0další informace"].str.replace('(.+Praha \d+)', "", regex=True)
+    pitches_df["Zkratka hřiště base"] = pitches_df["Zkratka hřiště"].str.extract(r"(^[A-Z]+)", expand=True)
+    pitches_df["Pure adresa"] = pitches_df["Adresa areálů (hřišť) a\xa0další informace"].str.extract(r"(.+Praha \d+)", expand=True)
+    pitches_df["Desc"] = pitches_df["Adresa areálů (hřišť) a\xa0další informace"].str.replace(r"(.+Praha \d+)", "", regex=True)
 
     logging.info("Successfully read pitches")
     logging.info(f"Found {len(pitches_df)} pitches")
