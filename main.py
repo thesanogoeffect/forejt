@@ -105,7 +105,8 @@ def find_team_url():
             logging.warning(f"Cached team URL no longer works ({e}), searching...")
 
     for slug in candidate_season_slugs():
-        season_url = f"{BASE_URL}/souteze/{slug.replace('-', '-hanspaulska-liga-', 1)}/"
+        season_path = slug.replace('-', '-hanspaulska-liga-', 1)
+        season_url = f"{BASE_URL}/souteze/{season_path}/"
         logging.info(f"Searching season page: {season_url}")
         try:
             html = get(season_url).text
@@ -114,10 +115,11 @@ def find_team_url():
             continue
 
         # The season page links every team directly, e.g.
-        # /souteze/<slug>/6-e/tymy/forejt-fc/. Fast path: no per-group probing.
+        # /souteze/<season-path>/6-e/tymy/forejt-fc/ — as relative or
+        # absolute hrefs. Fast path: no per-group probing.
         team_links = sorted({
             f"{BASE_URL}{m.group(1)}" for m in re.finditer(
-                rf'href="(/souteze/{re.escape(slug)}/[^"]+/tymy/{re.escape(TEAM_SLUG)}/)"', html)
+                rf'href="(?:https://www\.psmf\.cz)?(/souteze/{re.escape(season_path)}/[^/]+/tymy/{re.escape(TEAM_SLUG)}/)"', html)
         })
         for team_url in team_links:
             r = get(team_url)
@@ -127,9 +129,11 @@ def find_team_url():
                 return team_url
 
         # Fallback: probe each league group for the team page.
+        # Group links look like /souteze/<season-path>/6-e/ (relative or
+        # absolute).
         group_links = sorted({
             f"{BASE_URL}{m.group(1)}" for m in re.finditer(
-                rf'href="(/souteze/{re.escape(slug)}/[a-z0-9-]+/)"', html)
+                rf'href="(?:https://www\.psmf\.cz)?(/souteze/{re.escape(season_path)}/[a-z0-9-]+/)"', html)
         })
         for group_url in group_links:
             team_url = f"{group_url}tymy/{TEAM_SLUG}/"
