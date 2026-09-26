@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Whole-job guard: even in the worst partial-PSMF-failure case the run
+    # dies in 5 minutes instead of hanging.
+    timeout-minutes: 5
     steps:
       - name: Checkout main code
         uses: actions/checkout@v4

@@ -197,30 +197,17 @@ def test_get_team_position_points(scoreboard_df):
 
 
 # --------------------------------------------------------------------------- #
-# Live smoke test (skipped when PSMF is unreachable)
+# Live smoke test (skips — never fails — when PSMF is flaky)
 # --------------------------------------------------------------------------- #
-def _psmf_reachable(timeout=10):
-    """Fast, single-shot probe (no retry layer) so a down PSMF skips in
-    ~seconds instead of burning the full retry budget."""
-    import requests
-
-    try:
-        r = requests.get(main.BASE_URL, timeout=timeout,
-                         headers={"User-Agent": "forejt-ics-smoketest"})
-        return r.status_code == 200
-    except requests.RequestException:
-        return False
-
-
 def test_live_smoke():
-    """Reach PSMF, resolve the team page, and confirm Forejt FC is in it.
+    """Resolve the team page live and confirm Forejt FC is in its scoreboard.
 
-    Skips (does not fail) when PSMF is unreachable *or* when the live team
-    search cannot complete — PSMF is intermittently flaky, and the
-    deterministic tests above are what catch real code regressions.
+    Skips (does not fail) when the search can't complete: PSMF is
+    intermittently flaky, and the deterministic tests above are what catch
+    real code regressions. With the CI env (FOREJT_MAX_RETRIES=1,
+    FOREJT_TIMEOUT=8) a down PSMF skips in ~20s; the production retry budget
+    is untouched.
     """
-    if not _psmf_reachable():
-        pytest.skip("PSMF unreachable from this environment — skipping live smoke test")
     try:
         team_url = main.find_team_url()
         dfs = pd.read_html(team_url)
